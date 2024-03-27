@@ -2,7 +2,7 @@
 
 /* ======= Header animation ======= */   
 const header = document.getElementById('header');  
-
+const navLink = document.getElementsByClassName('nav-link');
 window.onload=function() 
 {   
     headerAnimation(); 
@@ -27,10 +27,16 @@ function headerAnimation () {
     var scrollTop = window.scrollY;
 	
 	if ( scrollTop > 100 ) {	    
-	    header.classList.add('header-shrink');    
+	    header.classList.add('header-shrink'); 
+        // for (let element of navLink){
+        //     element.classList.add('nav-link-1');
+        // }
 	    	    
 	} else {
 	    header.classList.remove('header-shrink');
+        // for (let element of navLink){
+        //     element.classList.remove('nav-link-1');
+        // }
 	}
 
 };

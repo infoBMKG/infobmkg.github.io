@@ -24,26 +24,52 @@
     <script defer src="dist/fontawesome/js/all.min.js"></script>
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="dist/css/theme.css" />
+    <link id="theme-style" rel="stylesheet" href="dist/css/theme.css"/>
+
+    <!-- Custom CSS -->
+    <style>
+      .header-shrink-1{
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+        background: white;
+      }
+      .nav-link-1{
+        color: gray !important;
+      }
+      .w-logo{
+        width: 35px !important;
+        height: auto !important;
+      }
+    </style>
   </head>
 
   <body>
     <header id="header" class="header fixed-top">
       <div class="branding">
-        <div class="container-fluid">
+        <div class="container-fluid" style="padding-left: 0px;">
           <nav class="main-nav navbar navbar-expand-lg">
-            <div class="site-logo">
+            <div class="site-logo theme-bg-primary" 
+              style="padding-left: 5px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; 
+              border-top-right-radius: 10px; border-bottom-right-radius: 10px;"
+              >
               <a class="scrollto" href="#hero-block"
-                ><img
-                  class="logo-icon"
-                  src="dist/images/logo-white.svg"
+                >
+                <img
+                  class="logo-icon w-logo"
+                  src="dist/images/logo-bmkg.png"
                   alt="logo"
-              /></a>
+                />
+                <img
+                  class="logo-icon w-logo"
+                  src="dist/images/unesco.svg"
+                  alt="logo"
+                  style="width: 150px !important;"
+                />
+              </a>
             </div>
 
             <div class="navbar-btn order-lg-2">
               <a
-                class="btn btn-secondary"
+                class="btn btn-secondary theme-bg-primary"
                 href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
                 target="_blank"
                 >Tickets</a
@@ -106,7 +132,7 @@
     </header>
     <!--//header-->
 
-    <div id="hero-block" class="hero-block">
+    <div id="hero-block" class="hero-block" style="height: 680px;">
       <div
         id="hero-carousel"
         class="hero-carousel carousel slide carousel-fade"
@@ -122,7 +148,7 @@
       <div class="container">
         <div class="hero-text-block">
           <h1 class="hero-heading mb-2">
-            Two Decades After 2004 Indian Ocean Tsunami
+            Two Decades After 2004 Indian Ocean Tsunami <br> <span style="font-size: 3rem; font-weight: 500;"> Reflection and the Way Forward </span>
           </h1>
           <div class="hero-meta mb-3">
             <i class="far fa-calendar-alt me-2"></i>11 - 14 November 2024
@@ -131,7 +157,7 @@
           <div class="hero-intro mb-4">
             2nd UNESCO IOC Global Tsunami Symposium
           </div>
-          <div class="hero-cta">
+          <div class="hero-cta d-none">
             <a
               class="btn btn-primary btn-lg"
               href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
@@ -146,7 +172,7 @@
     </div>
     <!--//hero-block-->
 
-    <div class="stats-block theme-bg-primary text-white py-4 text-center">
+    <div class="d-none stats-block theme-bg-primary text-white py-4 text-center">
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-3">
@@ -187,12 +213,14 @@
     </div>
     <!--//stats-block-->
 
-    <section id="about-section" class="about-section section theme-bg-light">
+    <section id="about-section" class="about-section section theme-bg-light" style="padding-top: 0px;">
       <div class="container">
-        <h3 class="section-heading text-center mb-3">About DevConf</h3>
+        <h3 class="theme-bg-primary text-center mb-3 p-5" 
+            style="font-size: 2.5em; position: relative; width: 100vw; left: calc(-50vw + 50%);">
+            About UNESCO-IOC Global Tsunami Symposium
+        </h3>
         <div class="section-intro single-col-max mx-auto mb-4">
-          Briefly introduce your conference or event here. You should convince
-          people why they should attend with a list of benefits.
+          
           <strong
             >Are you a conference organizer? Want to source developer t-shirts
             as part of your conference package?</strong
@@ -701,7 +729,7 @@
               aria-selected="true"
             >
               <span class="heading">Day 1</span>
-              <span class="meta">(Wed 12, Oct)</span>
+              <span class="meta">(Mon 11, Nov 2024)</span>
             </a>
           </li>
           <li class="nav-item me-2">
@@ -715,10 +743,10 @@
               aria-selected="false"
             >
               <span class="heading">Day 2</span>
-              <span class="meta">(Thu 13, Oct)</span>
+              <span class="meta">(Tue 12, Nov 2024)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item me-2">
             <a
               class="nav-link"
               id="tab-3"
@@ -729,7 +757,21 @@
               aria-selected="false"
             >
               <span class="heading">Day 3</span>
-              <span class="meta">(Fri 14, Oct)</span>
+              <span class="meta">(Wed 13, Nov 2024)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="tab-4"
+              data-bs-toggle="tab"
+              href="#tab-4-content"
+              role="tab"
+              aria-controls="tab-4-content"
+              aria-selected="false"
+            >
+              <span class="heading">Day 4</span>
+              <span class="meta">(Thu 14, Nov 2024)</span>
             </a>
           </li>
         </ul>
@@ -744,20 +786,20 @@
           >
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">9:00 - 9:30</h4>
+                <h4 class="time mb-3">8:30 - 9:00</h4>
                 <div class="profile">
                   <a
                     href="#modal-speaker-1"
                     data-bs-toggle="modal"
                     data-bs-target="#modal-speaker-1"
                     ><img
-                      class="profile-image rounded-circle mb-2"
+                      class="d-none profile-image rounded-circle mb-2"
                       src="dist/images/speakers/speaker-1.jpg"
                       alt=""
                   /></a>
                   <div class="name">
                     <a
-                      class="theme-link"
+                      class="d-none theme-link"
                       href="#modal-speaker-1"
                       data-bs-toggle="modal"
                       data-bs-target="#modal-speaker-1"
@@ -770,12 +812,12 @@
               <!--//meta-->
               <div class="content">
                 <h3 class="title mb-3">
-                  Best Practices And Tips For A Clean Angular Application
+                  Registration
                 </h3>
-                <div class="location mb-3">
+                <div class="d-none location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
                 </div>
-                <div class="desc">
+                <!-- <div class="desc">
                   Talk's summary goes here.
                   <strong
                     >You can hook up the speaker profile image/name on the left
@@ -784,27 +826,27 @@
                   Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet
                   nunc a eleifend lacinia. Phasellus dignissim augue at
                   consectetur ullamcorper.
-                </div>
+                </div> -->
               </div>
               <!--//content-->
             </div>
             <!--//item-->
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">9:30 - 10:00</h4>
+                <h4 class="time mb-3">9:00 - 10:00</h4>
                 <div class="profile">
                   <a
                     href="#modal-speaker-1"
                     data-bs-toggle="modal"
                     data-bs-target="#modal-speaker-1"
                     ><img
-                      class="profile-image rounded-circle mb-2"
+                      class="d-none profile-image rounded-circle mb-2"
                       src="dist/images/speakers/speaker-2.jpg"
                       alt=""
                   /></a>
                   <div class="name">
                     <a
-                      class="theme-link"
+                      class="d-none theme-link"
                       href="#modal-speaker-1"
                       data-bs-toggle="modal"
                       data-bs-target="#modal-speaker-1"
@@ -816,7 +858,7 @@
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Developer Productivity</h3>
+                <h3 class="title mb-3">Welcoming Ceremony</h3>
                 <div class="location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
                 </div>
@@ -836,11 +878,11 @@
             <!--//item-->
             <div class="item item-other">
               <div class="meta">
-                <h4 class="time mb-3">10:00 - 10:30</h4>
+                <h4 class="time mb-3">10:10 - 10:15</h4>
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Coffee Break</h3>
+                <h3 class="title mb-3">Welcoming Remarks</h3>
                 <div class="location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Room A5
                 </div>
@@ -854,8 +896,8 @@
             <!--//item-->
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">10:30 - 11:00</h4>
-                <div class="profile">
+                <h4 class="time mb-3">10:15 - 10:40</h4>
+                <div class="profile d-none">
                   <a
                     href="#modal-speaker-1"
                     data-bs-toggle="modal"
@@ -879,27 +921,20 @@
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Progressive Web Apps with React.js</h3>
+                <h3 class="title mb-3">Pre Session</h3>
                 <div class="location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
                 </div>
                 <div class="desc">
-                  Talk's summary goes here.
-                  <strong
-                    >You can hook up the speaker profile image/name on the left
-                    with his or her bio modal window</strong
-                  >. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet
-                  nunc a eleifend lacinia. Phasellus dignissim augue at
-                  consectetur ullamcorper.
+                  Photo session, press conference, and coffee break
                 </div>
               </div>
               <!--//content-->
             </div>
             <!--//item-->
-            <div class="item item-talk">
+            <div class="item item-talk mt-1">
               <div class="meta">
-                <h4 class="time mb-3">11:00 - 12:00</h4>
+                <h4 class="time mb-3">10:40 - 12:00</h4>
                 <div class="profile">
                   <a
                     href="#modal-speaker-1"
@@ -924,19 +959,17 @@
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
+                <h3 class="title mb-3">Session 1</h3>
                 <div class="location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Conference Room B
                 </div>
                 <div class="desc">
-                  Talk's summary goes here.
-                  <strong
-                    >You can hook up the speaker profile image/name on the left
-                    with his or her bio modal window</strong
-                  >. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet
-                  nunc a eleifend lacinia. Phasellus dignissim augue at
-                  consectetur ullamcorper.
+                  <strong> Review of the tsunami warning and mitigation systems over the pas 2 decades. </strong> <br>
+                  <ul>
+                    <li>Learning from Mega Tsunamis: 2004 Indian Ocean Tsunami and 2011 Tohoku Tsunami.</li>
+                    <li>Panel on history of IOTWMS (Past and present chairs ICG/IOTWMS, PTWC Representative, JMA Representative, UNESCAP, UNDRR Representative.</li>
+                    <li>Gaps, challenges, and priorities in tsunami risk, detection, warning and dissemination, awareness and preparedness including the needs for disruptive technologies (AI and 4.0)</li>
+                  </ul>
                 </div>
               </div>
               <!--//content-->
@@ -944,7 +977,7 @@
             <!--//item-->
             <div class="item item-other">
               <div class="meta">
-                <h4 class="time mb-3">12:00 - 13:30</h4>
+                <h4 class="time mb-3">12:00 - 13:00</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -953,8 +986,7 @@
                   <i class="fas fa-map-marker-alt me-2"></i>Room B6
                 </div>
                 <div class="desc">
-                  Buffet lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit.
+                  Break
                 </div>
               </div>
               <!--//content-->
@@ -962,8 +994,8 @@
             <!--//item-->
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">13:30 - 14:30</h4>
-                <div class="profile">
+                <h4 class="time mb-3">13:00 - 16:30</h4>
+                <div class="profile d-none">
                   <a
                     href="#modal-speaker-1"
                     data-bs-toggle="modal"
@@ -987,25 +1019,24 @@
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Talk Title Lorem Ipsum</h3>
+                <h3 class="title mb-3">Session 2</h3>
                 <div class="location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Conference Room C
                 </div>
                 <div class="desc">
-                  Talk's summary goes here.
                   <strong
-                    >You can hook up the speaker profile image/name on the left
-                    with his or her bio modal window</strong
-                  >. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet
-                  nunc a eleifend lacinia. Phasellus dignissim augue at
-                  consectetur ullamcorper.
+                    >Non-Seismic Tsunami in response to UN ODTP UN Ocean Decade Tsunami Programme</strong
+                  ><br>
+                  <ul>
+                    <li>Progress, gaps and emerging challenges of detecting and warning for tsunamis generated by non-seismic sources</li>
+                    <li>Developing awareness and preparedness of communities for tsunamis generated by non-seismic sources</li>
+                  </ul>
                 </div>
               </div>
               <!--//content-->
             </div>
             <!--//item-->
-            <div class="item item-talk">
+            <div class="d-none item item-talk">
               <div class="meta">
                 <h4 class="time mb-3">14:30 - 15:30</h4>
                 <div class="profile">
@@ -1050,7 +1081,7 @@
               <!--//content-->
             </div>
             <!--//item-->
-            <div class="item item-talk">
+            <div class="d-none item item-talk">
               <div class="meta">
                 <h4 class="time mb-3">15:30 - 16:30</h4>
                 <div class="profile">
@@ -1095,7 +1126,7 @@
               <!--//content-->
             </div>
             <!--//item-->
-            <div class="item item-talk">
+            <div class="d-none item item-talk">
               <div class="meta">
                 <h4 class="time mb-3">16:30 - 17:30</h4>
                 <div class="profile">
@@ -1140,7 +1171,7 @@
               <!--//content-->
             </div>
             <!--//item-->
-            <div class="item item-other">
+            <div class="d-none item item-other">
               <div class="meta">
                 <h4 class="time mb-3">18:00 - 24:00</h4>
               </div>
@@ -1168,9 +1199,170 @@
             role="tabpanel"
             aria-labelledby="tab-2"
           >
-            <h4 class="text-center py-5 text-muted">
-              Day 2 Agenda Coming Soon...
-            </h4>
+          <div class="item item-talk">
+            <div class="meta">
+              <h4 class="time mb-3">9:00 - 13:00</h4>
+              <div class="profile">
+                <a
+                  href="#modal-speaker-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-speaker-1"
+                  ><img
+                    class="d-none profile-image rounded-circle mb-2"
+                    src="dist/images/speakers/speaker-1.jpg"
+                    alt=""
+                /></a>
+                <div class="name">
+                  <a
+                    class="d-none theme-link"
+                    href="#modal-speaker-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-speaker-1"
+                    >James Doe</a
+                  >
+                </div>
+              </div>
+              <!--//profile-->
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">
+                Session 3
+              </h3>
+              <div class="d-none location mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
+              </div>
+              <div class="desc">
+                <strong
+                  >Tsunami Hazard and Risk Assessment</strong
+                >
+                <ul>
+                  <li>Evaluating seismic and non-seismic generated tsunami hazards (3 speaker)</li>
+                  <li>Identifying communities at-risk (3 speakers)</li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item item-talk">
+            <div class="meta">
+              <h4 class="time mb-3">13:00 - 15:00</h4>
+              <div class="profile">
+                <a
+                  href="#modal-speaker-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-speaker-1"
+                  ><img
+                    class="d-none profile-image rounded-circle mb-2"
+                    src="dist/images/speakers/speaker-2.jpg"
+                    alt=""
+                /></a>
+                <div class="name">
+                  <a
+                    class="d-none theme-link"
+                    href="#modal-speaker-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-speaker-1"
+                    >Sarah Doe</a
+                  >
+                </div>
+              </div>
+              <!--//profile-->
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">Session 4</h3>
+              <div class="location mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
+              </div>
+              <div class="desc">
+                <strong
+                  >Tsunami Detection, Warning and Dissemination</strong
+                >
+                <ul>
+                  <li>
+                    How to Enchance Timeliness and Accuracy of Tsunami Warnings? (3 speakers)
+                  </li>
+                  <li>
+                    How Do We Ensure Tsunami Warnings Reach All in the Community (3 speakers)
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item item-other">
+            <div class="meta">
+              <h4 class="time mb-3">14:00 - 15:00</h4>
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">Session 5</h3>
+              <div class="location mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i>Room A5
+              </div>
+              <div class="desc">
+                <strong>Achieving 100% Communities at Risk to be Prepared for and Resilient to Tsunami by 2030</strong>
+                <ul>
+                  <li>Progress of UNESCO IOC Tsunami Ready recognition programme (3 speakers)</li>
+                  <li>Synergizing Tsunami Ready with national programmes for tsunami preparedness (3 speakers)</li>
+                  <li>Tsunami Ready Coalition (2 speakers)</li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item item-talk">
+            <div class="meta">
+              <h4 class="time mb-3">16:15 - 17:30</h4>
+              <div class="profile d-none">
+                <a
+                  href="#modal-speaker-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-speaker-1"
+                  ><img
+                    class="profile-image rounded-circle mb-2"
+                    src="dist/images/speakers/speaker-3.jpg"
+                    alt=""
+                /></a>
+                <div class="name">
+                  <a
+                    class="theme-link"
+                    href="#modal-speaker-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-speaker-1"
+                    >Tim Doe</a
+                  >
+                </div>
+              </div>
+              <!--//profile-->
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">Session 6</h3>
+              <div class="location mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
+              </div>
+              <div class="desc">
+                <strong>
+                  Other Critical Issues
+                </strong>
+                <ul>
+                  <li>Social and Humanities perspective in Tsunami Science and Tsunami Early Warning System</li>
+                  <li>Critical infrastructure ready for tsunami: design, implementation, and maintenance</li>
+                  <li>Tsunami Disaster Governance, Policy, and Justice </li>
+                  <li>Mainstreaming DRR into Urban Planning</li>
+                  <li>MHEWS</li>
+                  <li>Cascading and compound hazards, systemic risk</li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
           </div>
           <!--//tab-2-content-->
           <div
@@ -1179,12 +1371,207 @@
             role="tabpanel"
             aria-labelledby="tab-3"
           >
-            <h4 class="text-center py-5 text-muted">
-              Day 3 Agenda Coming Soon...
-            </h4>
+          <!--//item-->
+          <div class="item item-other">
+            <div class="meta">
+              <h4 class="time mb-3">9:00 - 12:00</h4>
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">Excursion</h3>
+              <div class="desc">
+                <strong>Three places will be visited</strong>
+                <ul>
+                  <li>The Tsunami Museum of Aceh</li>
+                  <li>Affected area: Lampuu</li>
+                  <li>Tsunami Ready Village: Inauguration Tsunami Ready and Tsunami Drill</li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
           </div>
           <!--//tab-3-content-->
+          <div
+          class="tab-pane no-timeline"
+          id="tab-4-content"
+          role="tabpanel"
+          aria-labelledby="tab-4"
+        >
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">8:30 - 10:00</h4>
+            <div class="profile">
+              <a
+                href="#modal-speaker-1"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-speaker-1"
+                ><img
+                  class="d-none profile-image rounded-circle mb-2"
+                  src="dist/images/speakers/speaker-1.jpg"
+                  alt=""
+              /></a>
+              <div class="d-none name">
+                <a
+                  class="d-none theme-link"
+                  href="#modal-speaker-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-speaker-1"
+                  >James Doe</a
+                >
+              </div>
+            </div>
+            <!--//profile-->
+          </div>
+          <!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">
+              Session 7
+            </h3>
+            <div class="d-none location mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
+            </div>
+            <div class="desc">
+              <strong
+                >Contibutions of TEWS to global initiatives: UN OCean Decade, SDGs, SFDRR, COP28, EWS4ALL, MCR2030</strong
+              >
+            </div>
+          </div>
+          <!--//content-->
         </div>
+        <!--//item-->
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">10:00 - 12:00</h4>
+            <div class="profile">
+              <a
+                href="#modal-speaker-1"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-speaker-1"
+                ><img
+                  class="d-none profile-image rounded-circle mb-2"
+                  src="dist/images/speakers/speaker-2.jpg"
+                  alt=""
+              /></a>
+              <div class="d-none name">
+                <a
+                  class="d-none theme-link"
+                  href="#modal-speaker-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-speaker-1"
+                  >Sarah Doe</a
+                >
+              </div>
+            </div>
+            <!--//profile-->
+          </div>
+          <!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Session 8</h3>
+            <div class="location mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
+            </div>
+            <div class="desc">
+              <strong>Wrap up/Synthesis/Way Forward</strong>
+              <ul>
+                <li>
+                  An outcome document, drawing upon achievements, gaps, challenges, and priorities from each session, including pre-event  7 session moderators present brief summaries  input for the draft Banda Aceh Declaration
+                </li>
+                <li>
+                  Round Table Discussion on Way Forward (Chairs and TIC representatives each ICG, IUGG expert, Chair ODTP Science Committee)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--//content-->
+        </div>
+        <!--//item-->
+        <div class="item item-other">
+          <div class="meta">
+            <h4 class="time mb-3">13:00 - 15:00</h4>
+          </div>
+          <!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Closing Ceremoy</h3>
+            <div class="location mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>Conference Room
+            </div>
+            <div class="desc">
+              <ol>
+                <li>Indigenous Story-Teller – Pak Ngah</li>
+                <li>Hand-over price to the Indian Ocean Youth Tsunami Conversation and Campaign (IOYTCC) Winners (4 Indian Ocean competition regions)</li>
+                <li>Winner announcement for best poster presentation</li>
+                <li>Winner announcement for school children art/drawing competition</li>
+                <li>Closing remarks:</li>
+                <ul>
+                  <li>Head of BMKG</li>
+                  <li>Representative of the Local Goverment</li>
+                  <li>Representative of UNESCO IOC</li>
+                  <li>Representative of the Goverment (Officially Closed the Event)</li>
+                  <li>Banda Aceh Declaration (in one powerful sentence)</li>
+                </ul>
+                <li>
+                  Press Conference
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!--//content-->
+        </div>
+        <!--//item-->
+        <div class="item item-talk">
+          <div class="meta">
+            <h4 class="time mb-3">16:15 - 17:30</h4>
+            <div class="profile d-none">
+              <a
+                href="#modal-speaker-1"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-speaker-1"
+                ><img
+                  class="profile-image rounded-circle mb-2"
+                  src="dist/images/speakers/speaker-3.jpg"
+                  alt=""
+              /></a>
+              <div class="name">
+                <a
+                  class="theme-link"
+                  href="#modal-speaker-1"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-speaker-1"
+                  >Tim Doe</a
+                >
+              </div>
+            </div>
+            <!--//profile-->
+          </div>
+          <!--//meta-->
+          <div class="content">
+            <h3 class="title mb-3">Session 6</h3>
+            <div class="location mb-3">
+              <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
+            </div>
+            <div class="desc">
+              <strong>
+                Other Critical Issues
+              </strong>
+              <ul>
+                <li>Social and Humanities perspective in Tsunami Science and Tsunami Early Warning System</li>
+                <li>Critical infrastructure ready for tsunami: design, implementation, and maintenance</li>
+                <li>Tsunami Disaster Governance, Policy, and Justice </li>
+                <li>Mainstreaming DRR into Urban Planning</li>
+                <li>MHEWS</li>
+                <li>Cascading and compound hazards, systemic risk</li>
+              </ul>
+            </div>
+          </div>
+          <!--//content-->
+        </div>
+        <!--//item-->
+          </div>
+          <!--//tab-4-content-->
+        </div>
+        
         <!--//schedule-tab-content-->
         <div class="schedule-cta text-center mx-auto">
           <a
