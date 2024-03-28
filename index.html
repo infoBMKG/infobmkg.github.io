@@ -42,10 +42,19 @@
       .w-full{
         width: 100%;
       }
+      .speaker-image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
       @media screen and (min-width: 992px) {
         .w-lg-half{
           width: 50%;
         }
+      }
+      .blue-heading{
+        background: #098dcf;
+        color: #fff;
       }
     </style>
   </head>
@@ -225,55 +234,50 @@
       <div class="container">
         <h3 class="theme-bg-primary text-center mb-3 p-5" 
             style="font-size: 2.5em; position: relative; width: 100vw; left: calc(-50vw + 50%);">
-            About UNESCO-IOC Global Tsunami Symposium
+            About Event
         </h3>
-        <div class="section-intro single-col-max mx-auto mb-4">
-          
-          <strong
-            >Are you a conference organizer? Want to source developer t-shirts
-            as part of your conference package?</strong
-          >
-          Check out our programming tees at
-          <a href="https://made4dev.com/" target="_blank">made4dev.com</a> -
-          developers love them! Want to get a bulk discount or just want to use
-          one of the t-shirt designs? Please email
-          <a href="mailto:hello@made4dev.com">hello@made4dev.com</a> and we can
-          discuss.
+        <div class="section-intro single-col-max mx-auto mb-4" style="text-align: justify;">
+          The UNESCO-IOC and BMKG have initiatives to hold the UNESCO-IOC Global Tsunami Symposium on the Reflection of the Two Decades Indian Ocean Tsunami 2004 Commemoration. The symposium will bring together scientists, engineers, practitioners, and policy-maker from all over the globe to discuss the state of the art and the latest advances in tsunami science and engineering for better tsunami disaster preparedness, and mitigation. The symposium will also become a global platform to review the contribution of each regional warning system to the achievement of the Ocean Decade Tsunami Programme outcome of the SAFE OCEAN by 2030 through the implementation of the UNESCO-IOC Tsunami Ready Recognition Programme (TRRP). During the symposium, several communities will be recognized and inaugurated as Tsunami Ready Community.
         </div>
-        <div class="benefits-list text-center mb-3">
-          <h4 class="text-center mb-4">Why Join Us</h4>
-          <ul class="list-unstyled text-start d-inline-block">
-            <li>
-              <i class="fas fa-check-circle me-2"></i>Unique chance to lorem
-              ipsum dolor
-            </li>
-            <li>
-              <i class="fas fa-check-circle me-2"></i>Learn from the best in the
-              industry
-            </li>
-            <li>
-              <i class="fas fa-check-circle me-2"></i>Discover the best tools
-              and practices
-            </li>
-            <li>
-              <i class="fas fa-check-circle me-2"></i>Meet developers from all
-              over the world
-            </li>
-            <li><i class="fas fa-check-circle me-2"></i>Grow your network</li>
-            <li>
-              <i class="fas fa-check-circle me-2"></i>Practical workshops to
-              lorem ipsum dolor
-            </li>
-            <li>
-              <i class="fas fa-check-circle me-2"></i>After-party lorem ipsum
-              dolor
-            </li>
-            <li>
-              <i class="fas fa-check-circle me-2"></i>Free
-              <a href="https://made4dev.com">developer t-shirts</a> and swag
-            </li>
-          </ul>
+        <div class="d-flex mx-auto" style="width: 80%;">
+          <div class="benefits-list text-center mb-3 w-lg-half bg-white me-4" style="border-radius: 10px;">
+            <h4 class="mb-2 p-2 blue-heading">Objective</h4>
+            <p class="pt-2">The aims of the International Symposium on the Reflection of the Two Decades Indian Ocean Tsunami 2004 Commemoration are:</p>
+            <ul class="list-unstyled text-start p-2">
+              <li>
+                <i class="fas fa-check-circle me-2"></i>To commemorate 2 decades after 2004 Indian Ocean Tsunami.
+              </li>
+              <li>
+                <i class="fas fa-check-circle me-2"></i>To reflect what has been achieved by each regional tsunami warning and mitigation system in two decades.
+              </li>
+              <li>
+                <i class="fas fa-check-circle me-2"></i>To identify gaps, challenges and priorities for tsunami early warning.
+              </li>
+              <li>
+                <i class="fas fa-check-circle me-2"></i>To identify synergy with global challenges and coherence with global commitments. Shared learnings between countries and application in the Regional Oceans.
+              </li>
+              <li>
+                <i class="fas fa-check-circle me-2"></i>To gather global tsunami community
+              </li>
+            </ul>
+          </div>
+          <div class="benefits-list text-center mb-3 w-lg-half bg-white" style="border-radius: 10px;">
+            <h4 class="p-2 blue-heading">Scopes</h4>
+            <p class="pt-4">The scope of the event consist of:</p>
+            <ul class="p-2 pt-4 list-unstyled text-start">
+              <li>
+                <i class="fas fa-check-circle me-2"></i><strong>Pre-Event (8-9 November 2024):</strong> International Scientific Workshop hosted by IABI in collaboration with USK-TDRMC.
+              </li>
+              <li>
+                <i class="fas fa-check-circle me-2"></i><strong>Main Event (11-14 November 2024):</strong> the 2nd UNESCO-IOC Global Tsunami Symposium.
+              </li>
+              <li>
+                <i class="fas fa-check-circle me-2"></i><strong>Special Event:</strong> Posters Sessions, Exhibitions and Ignite Stages.
+              </li>
+            </ul>
+          </div>
         </div>
+       
         <!--//benefits-list-->
         <div class="event-countdown text-center mb-3">
           <h4 class="countdown-intro mb-2 text-center mb-3">
@@ -293,7 +297,7 @@
       </div>
       <!--//container-->
 
-      <div class="media-block theme-bg-primary py-5">
+      <div class="d-none media-block theme-bg-primary py-5">
         <div class="container">
           <h4 class="text-white text-center mb-3">Previously</h4>
           <div
@@ -351,7 +355,7 @@
                 data-bs-target="#modal-speaker-1"
                 ><img
                   src="dist/images/speakers/bmkg.jpg"
-                  class="card-img-top rounded-0"
+                  class="card-img-top speaker-image rounded-0"
                   alt=""
               /></a>
               <div class="card-body">
@@ -378,7 +382,7 @@
                 data-bs-target="#modal-speaker-2"
                 ><img
                   src="dist/images/speakers/bnpb.png"
-                  class="card-img-top rounded-0"
+                  class="card-img-top speaker-image rounded-0"
                   alt=""
               /></a>
               <div class="card-body">
@@ -404,7 +408,7 @@
                 data-bs-target="#modal-speaker-3"
                 ><img
                   src="dist/images/speakers/maki.jpg"
-                  class="card-img-top rounded-0"
+                  class="card-img-top speaker-image rounded-0"
                   alt=""
               /></a>
               <div class="card-body">
@@ -430,14 +434,13 @@
                 data-bs-target="#modal-speaker-4"
                 ><img
                   src="dist/images/speakers/bernaldo.png"
-                  class="card-img-top rounded-0"
+                  class="card-img-top speaker-image rounded-0"
                   alt=""
-                  style="height: 212px; object-fit: cover;"
               /></a>
               <div class="card-body">
                 <h5 class="card-title mb-2">Mr. Bernaldo Aliaga</h5>
                 <div class="card-text mb-3">
-                  <div class="meta">Tsunami Resilient Section</div>
+                  <div class="meta">Head Tsunami Resilience Section UNESCO-IOC</div>
                 </div>
                 <!--//card-text-->
               </div>
