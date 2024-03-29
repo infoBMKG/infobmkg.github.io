@@ -28,6 +28,10 @@
 
     <!-- Custom CSS -->
     <style>
+      th{
+        background: #098dcf !important;
+        color: white !important;
+      }
       .header-shrink-1{
         box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
         background: white;
@@ -55,6 +59,19 @@
       .blue-heading{
         background: #098dcf;
         color: #fff;
+      }
+      .bg-orange{
+        background-color: #EC645E !important;
+        color: white !important;
+        text-align: center;
+        /* font-weight: 600; */
+      }
+      .text-table{
+        text-align: center;
+        font-weight: 600;
+      }
+      .thead{
+        border-width: medium !important;
       }
     </style>
   </head>
@@ -232,7 +249,7 @@
 
     <section id="about-section" class="about-section section theme-bg-light" style="padding-top: 0px;">
       <div class="container">
-        <h3 class="theme-bg-primary text-center mb-3 p-5" 
+        <h3 class="theme-bg-primary text-center mb-3 p-5 text-white" 
             style="font-size: 2.5em; position: relative; width: 100vw; left: calc(-50vw + 50%);">
             About Event
         </h3>
@@ -257,7 +274,7 @@
                 <i class="fas fa-check-circle me-2"></i>To identify synergy with global challenges and coherence with global commitments. Shared learnings between countries and application in the Regional Oceans.
               </li>
               <li>
-                <i class="fas fa-check-circle me-2"></i>To gather global tsunami community
+                <i class="fas fa-check-circle me-2"></i>To gather global tsunami community.
               </li>
             </ul>
           </div>
@@ -279,7 +296,7 @@
         </div>
        
         <!--//benefits-list-->
-        <div class="event-countdown text-center mb-3">
+        <div class="event-countdown text-center mb-3 mt-3">
           <h4 class="countdown-intro mb-2 text-center mb-3">
             Event Starts In:
           </h4>
@@ -454,7 +471,7 @@
           </div>
         </div>
         <!--//row-->
-        <div class="speakers-cta text-center py-3">
+        <div class="speakers-cta text-center py-3 d-none">
           <a
             class="btn btn-primary btn-lg"
             href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
@@ -467,13 +484,72 @@
     </section>
     <!--//speakers-section-->
 
-    <div class="container">
-      <hr />
-    </div>
+    <!-- Event Schedule -->
+    <section
+      id="tickets-section"
+      class="tickets-section section theme-bg-light"
+    >
+      <div class="container">
+        <h3 class="section-heading text-center mb-3">Timetable of the 2ndUNESCO-IOC Global Tsunami Symposium</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle border-secondary">
+            <thead>
+              <tr>
+                <th scope="col" class="text-center theme-bg-primary thead">Pre-Event</th>
+                <th scope="col" class="text-center theme-bg-primary thead" colspan="4">Main Event</th>
+                <th scope="col" class="text-center theme-bg-primary thead">Post-Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="bg-info" rowspan="6"><h6 class="text-white text-center">Hosted by IABI in Collaboration with TDRMC</h6></td>
+                <td class="bg-orange"><h6 class="text-white">Day 1 (11 Nov 2024)</h6></td>
+                <td class="bg-orange"><h6 class="text-white">Day 2 (12 Nov 2024)</h6></td>
+                <td class="bg-orange"><h6 class="text-white">Day 3 <br> (13 Nov 2024)</h6></td>
+                <td class="bg-orange"><h6 class="text-white">Day 4 (14 Nov 2024)</h6></td>
+                <td class="bg-info" rowspan="6"><h6 class="text-white text-center">Hosted by BMKG</h6></td>
+              </tr>
+              <tr>
+                <td class="theme-bg-light text-table" rowspan="2">Opening Ceremony</td>
+                <td class="theme-bg-light text-table">Session 3: Tsunami Hazard and Risk Assessment</td>
+                <td class="theme-bg-light text-table" rowspan="2">All Day Excursion</td>
+                <td class="theme-bg-light text-table">Session 7: Contributions of TEWS to global initiatives</td>
+              </tr>
+              <tr>
+                <td class="theme-bg-light text-table">Session 4: Tsunami Detection, Warning, and Dissemination</td>
+                <td class="theme-bg-light text-table">Sesion 8: Wrap up / Synthesis / Way Forward</td>
+              </tr>
+              <tr>
+                <td class="theme-bg-light text-table" colspan="4">Lunch Break (12.00 - 14.00)</td>
+              </tr>
+              <tr>
+                <td class="theme-bg-light text-table">Session 1: Review of the Tsunami Warning an Mitigation Systemsover the past 2 decades</td>
+                <td class="theme-bg-light text-table">Session 5: Achievinv 100% Communities at Risk to be Prepared for and Resilient to tsunami by 2030</td>
+                <td class="theme-bg-light text-table"></td>
+                <td class="theme-bg-light text-table" rowspan="2">Closing Ceremony</td>
+              </tr>
+              <tr>
+                <td class="theme-bg-light text-table">Sesion 2: Non-Seismic Tsunami in response to UN ODTP UN Ocean Decade Tsunami Programme</td>
+                <td class="theme-bg-light text-table">Sesion 6: Other critical issues for building community resilience</td>
+                <td class="theme-bg-light text-table"></td>
+              </tr>
+              <tr style="background-color: red;">
+                <td class="bg-orange"><h6 class="text-white">Special Events: Tsunami United, Drawing Competition</h6></td>
+                <td class="bg-orange" colspan="4"><h6 class="text-white">Special Events: Poster Sessions, Exhibitions and Ignite Stages</h6></td>
+                <td class="bg-orange"><h6 class="text-white">Special Events: Open access edited UNESCO IOC book</h6></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--//container-->
+    </section>
+    <!-- Event Schedule -->
+
 
     <section id="schedule-section" class="schedule-section section">
       <div class="container">
-        <h3 class="section-heading text-center mb-5">Schedule</h3>
+        <h3 class="section-heading text-center mb-5">Main Event's Schedule</h3>
 
         <!-- Nav tabs -->
         <ul
