@@ -44,17 +44,12 @@
         height: auto !important;
       }
       .w-full{
-        width: 100%;
+        width: 100% !important;
       }
       .speaker-image{
         width: 100%;
         height: 300px;
         object-fit: cover;
-      }
-      @media screen and (min-width: 992px) {
-        .w-lg-half{
-          width: 50%;
-        }
       }
       .blue-heading{
         background: #098dcf;
@@ -75,6 +70,19 @@
       }
       .a-color{
         color: black !important;
+      }
+      .vertical-line{
+        display: none;
+      }
+      @media screen and (min-width: 992px) {
+        .w-lg-half{
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 760px) {
+        .vertical-line{
+          display: block !important;  
+        }
       }
     </style>
   </head>
@@ -1694,35 +1702,23 @@
     </section>
     <!--//sponsors-section-->
 
-    <footer class="footer py-5 theme-bg-light" style="color: black;">
-      <div class="container text-center">
-        <ul class="d-none social-list list-inline mb-4">
-          <li class="list-inline-item me-3">
-            <a href="#" class="a-color"><i class="fas fa-envelope"></i></a>
-          </li>
-          <li class="list-inline-item me-3">
-            <a href="#" class="a-color"><i class="fab fa-twitter fa-fw"></i></a>
-          </li>
-          <li class="list-inline-item me-3">
-            <a href="#" class="a-color"><i class="fab fa-instagram fa-fw"></i></a>
-          </li>
-          <li class="list-inline-item me-0">
-            <a href="#" class="a-color"><i class="fab fa-youtube fa-fw"></i></a>
-          </li>
-        </ul>
-        <!--//social-list-->
-
-        <ul class="d-none footer-links list-inline mx-auto mb-4">
-          <li class="list-inline-item"><a href="#" class="a-color">Code of Conduct</a></li>
-          <li class="list-inline-item">|</li>
-          <li class="list-inline-item"><a href="#" class="a-color">Terms</a></li>
-          <li class="list-inline-item">|</li>
-          <li class="list-inline-item me-0"><a href="#" class="a-color">Privacy</a></li>
-        </ul>
-        <!--//footer-link-->
-        <div>
-          <i class="fas fa-envelope me-2"></i>Email: committee.gts@bmkg.go.id 
+    <footer class="footer py-5 theme-bg-white" style="color: black;">
+      <div class="container d-flex" style="flex-wrap: wrap; gap: 20px;">
+        <div id="logo d-flex">
+          <img class="me-3" src="dist/images/logo-bmkg.png" alt="" style="width: 99px;">
+          <img src="dist/images/unesco.jpg" alt="" style="width: 129px;">
         </div>
+        <div class="vertical-line" style="background: #098dcf; height: 100px; width: 5px;"></div>
+        <div class="">
+          <div class="">
+            <i class="fa-solid fa-envelope me-2" style="color: #098dcf;"></i> committee.gts@bmkg.go.id
+          </div>
+          <div class="">
+            <i class="fa-solid fa-house me-2 mt-2" style="color: #098dcf;"></i> Jl. Angkasa 1 No. 2, Kemayoran, Jakarta Pusat
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-2">
         <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
         <small class="copyright"
           >Designed with <i class="fas fa-heart" style="color: #ec645e"></i> by
