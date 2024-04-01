@@ -12,10 +12,46 @@
       content="2nd UNESCO IOC Global Tsunami Symposium. Two Decades After 2004 Indian Ocean Tsunami: Reflection and the Way Forward."
     />
     <meta name="author" content="BMKG" />
+
+    <meta
+      name="description"
+      content="2nd UNESCO IOC Global Tsunami Symposium. Two Decades After 2004 Indian Ocean Tsunami: Reflection and the Way Forward."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="2nd UNESCO IOC Global Tsunami Symposium"
+    />
+    <meta
+      property="og:image"
+      content="https://infobmkg.github.io/dist/images/splash.png"
+    />
+    <meta
+      property="og:description"
+      content="2nd UNESCO IOC Global Tsunami Symposium. Two Decades After 2004 Indian Ocean Tsunami: Reflection and the Way Forward."
+    />
+    <meta property="og:url" content="https://www.bmkg.go.id/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@infoBMKG" />
+    <meta name="twitter:creator" content="@infoBMKG" />
+    <meta
+      name="twitter:title"
+      content="2nd UNESCO IOC Global Tsunami Symposium"
+    />
+    <meta
+      name="twitter:description"
+      content="2nd UNESCO IOC Global Tsunami Symposium. Two Decades After 2004 Indian Ocean Tsunami: Reflection and the Way Forward."
+    />
+    <meta
+      name="twitter:image"
+      content="https://infobmkg.github.io/dist/images/splash.png"
+    />
+
     <link rel="shortcut icon" href="dist/images/favicon.ico" />
 
     <!-- Google Font -->
     <link
+      rel="preconnect"
       href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap"
       rel="stylesheet"
     />
@@ -24,67 +60,76 @@
     <script defer src="dist/fontawesome/js/all.min.js"></script>
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="dist/css/theme.css"/>
+    <link id="theme-style" rel="stylesheet" href="dist/css/theme.css" />
 
     <!-- Custom CSS -->
     <style>
-      th{
+      th {
         background: #098dcf !important;
         color: white !important;
       }
-      .header-shrink-1{
-        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+      .header-shrink-1 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
         background: white;
       }
-      .nav-link-1{
+      .hero-heading span {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .nav-link-1 {
         color: gray !important;
       }
-      .w-logo{
+      .w-logo {
         width: 35px !important;
         height: auto !important;
       }
-      .w-full{
+      .w-full {
         width: 100% !important;
       }
-      .speaker-image{
+      .speaker-image {
         width: 100%;
         height: 300px;
         object-fit: cover;
       }
-      .blue-heading{
+      .blue-heading {
         background: #098dcf;
         color: #fff;
       }
-      .bg-orange{
-        background-color: #EC645E !important;
+      .bg-orange {
+        background-color: #ec645e !important;
         color: white !important;
         text-align: center;
         /* font-weight: 600; */
       }
-      .text-table{
+      .text-table {
         text-align: center;
         font-weight: 600;
       }
-      .thead{
+      .thead {
         border-width: medium !important;
       }
-      .a-color{
+      .a-color {
         color: black !important;
       }
-      .vertical-line{
+      .vertical-line {
         display: none;
       }
-      .date-table{
+      .date-table {
         width: 115px;
       }
       @media screen and (min-width: 992px) {
-        .w-lg-half{
+        .w-lg-half {
           width: 40%;
         }
       }
       @media screen and (min-width: 760px) {
-        .vertical-line{
-          display: block !important;  
+        .vertical-line {
+          display: block !important;
+        }
+      }
+      @media screen and (max-width: 767.98px) {
+        .hero-heading span {
+          font-size: 2rem;
         }
       }
     </style>
@@ -93,24 +138,34 @@
   <body>
     <header id="header" class="header fixed-top">
       <div class="branding">
-        <div class="container-fluid" style="padding-left: 0px;">
+        <div class="container-fluid" style="padding-left: 0px">
           <nav class="main-nav navbar navbar-expand-lg">
-            <div class="site-logo theme-bg-primary" 
-              style="padding-left: 5px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; 
-              border-top-right-radius: 10px; border-bottom-right-radius: 10px;"
-              >
-              <a class="scrollto" href="#hero-block"
-                >
+            <div
+              class="site-logo theme-bg-primary"
+              style="
+                padding-left: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            >
+              <a class="scrollto" href="#hero-block">
                 <img
                   class="logo-icon w-logo"
                   src="dist/images/logo-bmkg.png"
                   alt="logo"
+                  width="99"
+                  height="auto"
                 />
                 <img
                   class="logo-icon w-logo"
                   src="dist/images/unesco.svg"
                   alt="logo"
-                  style="width: 150px !important;"
+                  width="150"
+                  height="auto"
+                  style="width: 150px !important"
                 />
               </a>
             </div>
@@ -118,9 +173,9 @@
             <div class="navbar-btn order-lg-2">
               <a
                 class="btn btn-secondary theme-bg-primary"
-                href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
+                href="#"
                 target="_blank"
-                >Tickets</a
+                >Register</a
               >
             </div>
 
@@ -155,17 +210,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link scrollto" href="#tickets-section"
-                    >Tickets</a
-                  >
-                </li>
-                <li class="nav-item">
                   <a class="nav-link scrollto" href="#venue-section">Venue</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link scrollto" href="#sponsors-section"
-                    >Sponsors</a
-                  >
                 </li>
               </ul>
               <!--//nav-->
@@ -180,7 +225,7 @@
     </header>
     <!--//header-->
 
-    <div id="hero-block" class="hero-block" style="height: 680px;">
+    <div id="hero-block" class="hero-block" style="height: 680px">
       <div
         id="hero-carousel"
         class="hero-carousel carousel slide carousel-fade"
@@ -196,10 +241,11 @@
       <div class="container">
         <div class="hero-text-block">
           <h1 class="hero-heading mb-2">
-            Two Decades After 2004 Indian Ocean Tsunami <br> <span style="font-size: 3rem; font-weight: 500;"> Reflection and the Way Forward </span>
+            Two Decades After 2004 Indian Ocean Tsunami <br />
+            <span> Reflection and the Way Forward </span>
           </h1>
           <div class="hero-meta mb-3">
-            <i class="far fa-calendar-alt me-2"></i>11 - 14 November 2024
+            <i class="far fa-calendar-alt me-2"></i>11&ndash;14 November 2024
             <i class="fas fa-map-marker-alt mx-2"></i>Banda Aceh, Indonesia
           </div>
           <div class="hero-intro mb-4">
@@ -220,55 +266,123 @@
     </div>
     <!--//hero-block-->
 
-    <section id="about-section" class="about-section section theme-bg-light" style="padding-top: 0px;">
+    <section
+      id="about-section"
+      class="about-section section theme-bg-light"
+      style="padding-top: 0px"
+    >
       <div class="container">
-        <div class="text-center pt-5 pb-4" style="font-size: 2em; font-weight: bold;"><strong>About Event</strong></div>
-        <div class="section-intro single-col-max mx-auto mb-5 text-center">
-          The UNESCO-IOC and BMKG have initiatives to hold the UNESCO-IOC Global Tsunami Symposium on the Reflection of the Two Decades Indian Ocean Tsunami 2004 Commemoration. The symposium will bring together scientists, engineers, practitioners, and policy-maker from all over the globe to discuss the state of the art and the latest advances in tsunami science and engineering for better tsunami disaster preparedness, and mitigation.
+        <div
+          class="text-center pt-5 pb-4"
+          style="font-size: 2em; font-weight: bold"
+        >
+          <strong>About Event</strong>
         </div>
-        <div class="d-flex mx-auto" style="flex-wrap: wrap; gap: 10px; justify-content: center;">
-          <div class="benefits-list text-center mb-3 w-lg-half p-2" style="border-radius: 10px;">
-            <div class="mb-2 p-1 blue-heading" style="font-weight: bold;">Objective</div>
+        <div class="section-intro single-col-max mx-auto mb-5 text-center">
+          The UNESCO-IOC and BMKG have initiatives to hold the UNESCO-IOC Global
+          Tsunami Symposium on the Reflection of the Two Decades Indian Ocean
+          Tsunami 2004 Commemoration. The symposium will bring together
+          scientists, engineers, practitioners, and policy-maker from all over
+          the globe to discuss the state of the art and the latest advances in
+          tsunami science and engineering for better tsunami disaster
+          preparedness, and mitigation.
+        </div>
+        <div
+          class="d-flex mx-auto"
+          style="flex-wrap: wrap; gap: 10px; justify-content: center"
+        >
+          <div
+            class="benefits-list text-center mb-3 w-lg-half p-2"
+            style="border-radius: 10px"
+          >
+            <div class="mb-2 p-1 blue-heading" style="font-weight: bold">
+              Objective
+            </div>
             <table class="table">
               <tbody>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start">To commemorate 2 decades after 2004 Indian Ocean Tsunami.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    To commemorate 2 decades after 2004 Indian Ocean Tsunami.
+                  </td>
                 </tr>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start">To reflect what has been achieved by each regional tsunami warning and mitigation system in two decades.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    To reflect what has been achieved by each regional tsunami
+                    warning and mitigation system in two decades.
+                  </td>
                 </tr>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start">To identify gaps, challenges and priorities for tsunami early warning.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    To identify gaps, challenges and priorities for tsunami
+                    early warning.
+                  </td>
                 </tr>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start">To identify synergy with global challenges and coherence with global commitments. Shared learnings between countries and application in the Regional Oceans.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    To identify synergy with global challenges and coherence
+                    with global commitments. Shared learnings between countries
+                    and application in the Regional Oceans.
+                  </td>
                 </tr>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start">To gather global tsunami community.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    To gather global tsunami community.
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="benefits-list text-center mb-3 w-lg-half p-2" style="border-radius: 10px;">
-            <div class="mb-2 p-1 blue-heading" style="font-weight: bold;">Scopes</div>
+          <div
+            class="benefits-list text-center mb-3 w-lg-half p-2"
+            style="border-radius: 10px"
+          >
+            <div class="mb-2 p-1 blue-heading" style="font-weight: bold">
+              Scopes
+            </div>
             <table class="table">
               <tbody>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start"><strong>Pre-Event (8-9 November 2024):</strong> International Scientific Workshop hosted by IABI in collaboration with USK-TDRMC.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    <strong>Pre-Event (8&ndash;9 November 2024):</strong>
+                    International Scientific Workshop hosted by IABI in
+                    collaboration with USK-TDRMC.
+                  </td>
                 </tr>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start"><strong>Main Event (11-14 November 2024):</strong> the 2nd UNESCO-IOC Global Tsunami Symposium.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    <strong>Main Event (11&ndash;14 November 2024):</strong> the
+                    2nd UNESCO-IOC Global Tsunami Symposium.
+                  </td>
                 </tr>
                 <tr>
-                  <td scope="col" class="align-middle"><i class="fas fa-check-circle" style="color: #098dcf;"></i></td>
-                  <td class="text-start"><strong>Special Event:</strong> Posters Sessions, Exhibitions and Ignite Stages.</td>
+                  <td scope="col" class="align-middle">
+                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
+                  </td>
+                  <td class="text-start">
+                    <strong>Special Event:</strong> Posters Sessions,
+                    Exhibitions and Ignite Stages.
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -276,18 +390,15 @@
         </div>
         <!--//benefits-list-->
         <div class="event-countdown text-center mt-4">
-          <h4 class="countdown-intro mb-2 text-center mb-3">
+          <h2 class="countdown-intro mb-2 text-center mb-3">
             Event Starts In:
-          </h4>
+          </h2>
           <div id="countdown-box" class="countdown-box"></div>
         </div>
         <!--//event-countdown-->
         <div class="about-cta text-center">
-          <a
-            class="btn btn-secondary btn-lg mb-5"
-            href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
-            target="_blank"
-            >Get Your Ticket Today</a
+          <a class="btn btn-secondary btn-lg mb-5" href="#" target="_blank"
+            >Register</a
           >
         </div>
       </div>
@@ -299,22 +410,21 @@
       <div class="container">
         <h3 class="section-heading text-center mb-3">Steering Commitee</h3>
         <div class="section-intro text-center single-col-max mx-auto mb-5">
-          To guide the Programme Organizing Committee on the substance of symposium: the themes, topics, programme, expertise and speakers, etc.
+          To guide the Programme Organizing Committee on the substance of
+          symposium: the themes, topics, programme, expertise and speakers, etc.
         </div>
         <div class="row">
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
-              <a
-                href="#modal-speaker-1"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-speaker-1"
-                ><img
-                  src="dist/images/speakers/bmkg.jpg"
-                  class="card-img-top speaker-image rounded-0"
-                  alt=""
-              /></a>
+              <img
+                src="dist/images/speakers/bmkg.jpg"
+                class="card-img-top speaker-image rounded-0"
+                alt=""
+              />
               <div class="card-body">
-                <h5 class="card-title mb-2">Prof. Dwikorita Karnawati </h5>
+                <h4 class="card-title mb-2">
+                  Prof. Dwikorita Karnawati, Ph.D.
+                </h4>
                 <div class="card-text mb-3">
                   <div class="meta">Head of BMKG</div>
                   <div class="meta">Chair of UNESCO IOC/ICG IOTWMS</div>
@@ -323,7 +433,6 @@
               </div>
               <!--//card-->
               <div class="card-footer text-muted">
-              
                 <!--//social-list-->
               </div>
             </div>
@@ -331,17 +440,15 @@
           </div>
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
-              <a
-                href="#modal-speaker-2"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-speaker-2"
-                ><img
-                  src="dist/images/speakers/bnpb.png"
-                  class="card-img-top speaker-image rounded-0"
-                  alt=""
-              /></a>
+              <img
+                src="dist/images/speakers/bnpb.png"
+                class="card-img-top speaker-image rounded-0"
+                alt=""
+              />
               <div class="card-body">
-                <h5 class="card-title mb-2">Letjen TNI Suharyanto, S.Sos., M.M.</h5>
+                <h4 class="card-title mb-2">
+                  Letjen TNI Suharyanto, S.Sos., M.M.
+                </h4>
                 <div class="card-text mb-3">
                   <div class="meta">Head of BNPB</div>
                 </div>
@@ -349,7 +456,6 @@
               </div>
               <!--//card-->
               <div class="card-footer text-muted">
-              
                 <!--//social-list-->
               </div>
             </div>
@@ -357,25 +463,22 @@
           </div>
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
-              <a
-                href="#modal-speaker-3"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-speaker-3"
-                ><img
-                  src="dist/images/speakers/maki.jpg"
-                  class="card-img-top speaker-image rounded-0"
-                  alt=""
-              /></a>
+              <img
+                src="dist/images/speakers/maki.jpg"
+                class="card-img-top speaker-image rounded-0"
+                alt=""
+              />
               <div class="card-body">
-                <h5 class="card-title mb-2">Ms. Maki Katsuno-Hayashikawa</h5>
+                <h4 class="card-title mb-2">Ms. Maki Katsuno-Hayashikawa</h4>
                 <div class="card-text mb-3">
-                  <div class="meta">Director of UNESCO Multisectoral Regional Office in Jakarta</div>
+                  <div class="meta">
+                    Director of UNESCO Multisectoral Regional Office in Jakarta
+                  </div>
                 </div>
                 <!--//card-text-->
               </div>
               <!--//card-->
               <div class="card-footer text-muted">
-              
                 <!--//social-list-->
               </div>
             </div>
@@ -383,25 +486,22 @@
           </div>
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
-              <a
-                href="#modal-speaker-4"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-speaker-4"
-                ><img
-                  src="dist/images/speakers/bernaldo.png"
-                  class="card-img-top speaker-image rounded-0"
-                  alt=""
-              /></a>
+              <img
+                src="dist/images/speakers/bernaldo.png"
+                class="card-img-top speaker-image rounded-0"
+                alt=""
+              />
               <div class="card-body">
-                <h5 class="card-title mb-2">Mr. Bernaldo Aliaga</h5>
+                <h4 class="card-title mb-2">Mr. Bernaldo Aliaga</h4>
                 <div class="card-text mb-3">
-                  <div class="meta">Head Tsunami Resilience Section UNESCO-IOC</div>
+                  <div class="meta">
+                    Head Tsunami Resilience Section UNESCO-IOC
+                  </div>
                 </div>
                 <!--//card-text-->
               </div>
               <!--//card-->
               <div class="card-footer text-muted">
-              
                 <!--//social-list-->
               </div>
             </div>
@@ -422,7 +522,7 @@
     </section>
     <!--//speakers-section-->
 
-    <hr>
+    <hr />
 
     <section id="schedule-section" class="schedule-section section">
       <div class="container">
@@ -432,46 +532,96 @@
             <tbody>
               <tr>
                 <td class="date-table">
-                  <div class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3" style="font-size: 1.5rem; font-weight: bold;">
-                    <div class="">8-9</div>
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3"
+                    style="font-size: 1.5rem; font-weight: bold"
+                  >
+                    <div class="">8&ndash;9</div>
                     <div class="">Nov</div>
                   </div>
                 </td>
                 <td>
-                  <div class="d-flex flex-column" style="font-size: 1.2rem;">
-                    <div class="" style="font-size: 1.4rem; color: #EC645E; font-weight: bold;">Pre Event</div>
-                    <div class="" style="color: #098dcf; font-size: 1.5rem;">International Scientific Workshop hosted by IABI in collaboration with USK-TDRMC</div>
-                    <div class="" style="color: #415b78;">Special Events: Tsunami United, Drawing Competition</div>
+                  <div class="d-flex flex-column" style="font-size: 1.2rem">
+                    <div
+                      class=""
+                      style="
+                        font-size: 1.4rem;
+                        color: #ec645e;
+                        font-weight: bold;
+                      "
+                    >
+                      Pre Event
+                    </div>
+                    <div class="" style="color: #098dcf; font-size: 1.5rem">
+                      International Scientific Workshop hosted by IABI in
+                      collaboration with USK-TDRMC
+                    </div>
+                    <div class="" style="color: #415b78">
+                      Special Events: Tsunami United, Drawing Competition
+                    </div>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td class="date-table">
-                  <div class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3" style="font-size: 1.5rem; font-weight: bold;">
-                    <div class="">11-14</div>
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3"
+                    style="font-size: 1.5rem; font-weight: bold"
+                  >
+                    <div class="">11&ndash;14</div>
                     <div class="">Nov</div>
                   </div>
                 </td>
                 <td>
-                  <div class="d-flex flex-column" style="font-size: 1.2rem;">
-                    <div class="" style="font-size: 1.4rem; color: #EC645E; font-weight: bold;">Main Event</div>
-                    <div class="" style="color: #098dcf; font-size: 1.5rem;">2nd UNESCO IOC Global Tsunami Symposium </div>
-                    <p class="" style="color: #415b78;">Special Events: Poster Sessions, Exhibitions and Ignite Stages</p>
+                  <div class="d-flex flex-column" style="font-size: 1.2rem">
+                    <div
+                      class=""
+                      style="
+                        font-size: 1.4rem;
+                        color: #ec645e;
+                        font-weight: bold;
+                      "
+                    >
+                      Main Event
+                    </div>
+                    <div class="" style="color: #098dcf; font-size: 1.5rem">
+                      2nd UNESCO IOC Global Tsunami Symposium
+                    </div>
+                    <p class="" style="color: #415b78">
+                      Special Events: Poster Sessions, Exhibitions and Ignite
+                      Stages
+                    </p>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td class="date-table">
-                  <div class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3" style="font-size: 1.5rem; font-weight: bold;">
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3"
+                    style="font-size: 1.5rem; font-weight: bold"
+                  >
                     <div class="">x</div>
                     <div class="">Nov</div>
                   </div>
                 </td>
                 <td>
-                  <div class="d-flex flex-column" style="font-size: 1.2rem;">
-                    <div class="" style="font-size: 1.4rem; color: #EC645E; font-weight: bold;">Post Event</div>
-                    <div class="" style="color: #098dcf; font-size: 1.5rem;">ICG IOTWMS XIV Session</div>
-                    <div class="" style="color: #415b78;">Special Events: Open access edited UNESCO IOC book</div>
+                  <div class="d-flex flex-column" style="font-size: 1.2rem">
+                    <div
+                      class=""
+                      style="
+                        font-size: 1.4rem;
+                        color: #ec645e;
+                        font-weight: bold;
+                      "
+                    >
+                      Post Event
+                    </div>
+                    <div class="" style="color: #098dcf; font-size: 1.5rem">
+                      ICG IOTWMS XIV Session
+                    </div>
+                    <div class="" style="color: #415b78">
+                      Special Events: Open access edited UNESCO IOC book
+                    </div>
                   </div>
                 </td>
               </tr>
@@ -558,15 +708,11 @@
               <div class="meta">
                 <h4 class="time mb-3">8:30 - 9:00</h4>
                 <div class="profile">
-                  <a
-                    href="#modal-speaker-1"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modal-speaker-1"
-                    ><img
-                      class="d-none profile-image rounded-circle mb-2"
-                      src="dist/images/speakers/speaker-1.jpg"
-                      alt=""
-                  /></a>
+                  <img
+                    class="d-none profile-image rounded-circle mb-2"
+                    src="dist/images/speakers/bmkg.jpg"
+                    alt=""
+                  />
                   <div class="name">
                     <a
                       class="d-none theme-link"
@@ -581,9 +727,7 @@
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">
-                  Registration
-                </h3>
+                <h3 class="title mb-3">Registration</h3>
                 <div class="d-none location mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>Conference Room A
                 </div>
@@ -662,11 +806,27 @@
               <div class="content">
                 <h3 class="title mb-3">Session 1</h3>
                 <div class="desc">
-                  <strong> Review of the tsunami warning and mitigation systems over the pas 2 decades. </strong> <br>
+                  <strong>
+                    Review of the tsunami warning and mitigation systems over
+                    the pas 2 decades.
+                  </strong>
+                  <br />
                   <ul>
-                    <li>Learning from Mega Tsunamis: 2004 Indian Ocean Tsunami and 2011 Tohoku Tsunami.</li>
-                    <li>Panel on history of IOTWMS (Past and present chairs ICG/IOTWMS, PTWC Representative, JMA Representative, UNESCAP, UNDRR Representative.</li>
-                    <li>Gaps, challenges, and priorities in tsunami risk, detection, warning and dissemination, awareness and preparedness including the needs for disruptive technologies (AI and 4.0)</li>
+                    <li>
+                      Learning from Mega Tsunamis: 2004 Indian Ocean Tsunami and
+                      2011 Tohoku Tsunami.
+                    </li>
+                    <li>
+                      Panel on history of IOTWMS (Past and present chairs
+                      ICG/IOTWMS, PTWC Representative, JMA Representative,
+                      UNESCAP, UNDRR Representative.
+                    </li>
+                    <li>
+                      Gaps, challenges, and priorities in tsunami risk,
+                      detection, warning and dissemination, awareness and
+                      preparedness including the needs for disruptive
+                      technologies (AI and 4.0)
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -680,9 +840,7 @@
               <!--//meta-->
               <div class="content">
                 <h3 class="title mb-3">Lunch Break</h3>
-                <div class="desc">
-                  Break
-                </div>
+                <div class="desc">Break</div>
               </div>
               <!--//content-->
             </div>
@@ -696,11 +854,18 @@
                 <h3 class="title mb-3">Session 2</h3>
                 <div class="desc">
                   <strong
-                    >Non-Seismic Tsunami in response to UN ODTP UN Ocean Decade Tsunami Programme</strong
-                  ><br>
+                    >Non-Seismic Tsunami in response to UN ODTP UN Ocean Decade
+                    Tsunami Programme</strong
+                  ><br />
                   <ul>
-                    <li>Progress, gaps and emerging challenges of detecting and warning for tsunamis generated by non-seismic sources</li>
-                    <li>Developing awareness and preparedness of communities for tsunamis generated by non-seismic sources</li>
+                    <li>
+                      Progress, gaps and emerging challenges of detecting and
+                      warning for tsunamis generated by non-seismic sources
+                    </li>
+                    <li>
+                      Developing awareness and preparedness of communities for
+                      tsunamis generated by non-seismic sources
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -715,95 +880,107 @@
             role="tabpanel"
             aria-labelledby="tab-2"
           >
-          <div class="item item-talk">
-            <div class="meta">
-              <h4 class="time mb-3">9:00 - 13:00</h4>
-            </div>
-            <!--//meta-->
-            <div class="content">
-              <h3 class="title mb-3">
-                Session 3
-              </h3>
-              <div class="desc">
-                <strong
-                  >Tsunami Hazard and Risk Assessment</strong
-                >
-                <ul>
-                  <li>Evaluating seismic and non-seismic generated tsunami hazards (3 speaker)</li>
-                  <li>Identifying communities at-risk (3 speakers)</li>
-                </ul>
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">9:00 - 13:00</h4>
               </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//item-->
-          <div class="item item-talk">
-            <div class="meta">
-              <h4 class="time mb-3">13:00 - 15:00</h4>
-            </div>
-            <!--//meta-->
-            <div class="content">
-              <h3 class="title mb-3">Session 4</h3>
-              <div class="desc">
-                <strong
-                  >Tsunami Detection, Warning and Dissemination</strong
-                >
-                <ul>
-                  <li>
-                    How to Enchance Timeliness and Accuracy of Tsunami Warnings? (3 speakers)
-                  </li>
-                  <li>
-                    How Do We Ensure Tsunami Warnings Reach All in the Community (3 speakers)
-                  </li>
-                </ul>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Session 3</h3>
+                <div class="desc">
+                  <strong>Tsunami Hazard and Risk Assessment</strong>
+                  <ul>
+                    <li>
+                      Evaluating seismic and non-seismic generated tsunami
+                      hazards (3 speaker)
+                    </li>
+                    <li>Identifying communities at-risk (3 speakers)</li>
+                  </ul>
+                </div>
               </div>
+              <!--//content-->
             </div>
-            <!--//content-->
-          </div>
-          <!--//item-->
-          <div class="item item-other">
-            <div class="meta">
-              <h4 class="time mb-3">14:00 - 15:00</h4>
-            </div>
-            <!--//meta-->
-            <div class="content">
-              <h3 class="title mb-3">Session 5</h3>
-              <div class="desc">
-                <strong>Achieving 100% Communities at Risk to be Prepared for and Resilient to Tsunami by 2030</strong>
-                <ul>
-                  <li>Progress of UNESCO IOC Tsunami Ready recognition programme (3 speakers)</li>
-                  <li>Synergizing Tsunami Ready with national programmes for tsunami preparedness (3 speakers)</li>
-                  <li>Tsunami Ready Coalition (2 speakers)</li>
-                </ul>
+            <!--//item-->
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">13:00 - 15:00</h4>
               </div>
-            </div>
-            <!--//content-->
-          </div>
-          <!--//item-->
-          <div class="item item-talk">
-            <div class="meta">
-              <h4 class="time mb-3">16:15 - 17:30</h4>
-            </div>
-            <!--//meta-->
-            <div class="content">
-              <h3 class="title mb-3">Session 6</h3>
-              <div class="desc">
-                <strong>
-                  Other Critical Issues
-                </strong>
-                <ul>
-                  <li>Social and Humanities perspective in Tsunami Science and Tsunami Early Warning System</li>
-                  <li>Critical infrastructure ready for tsunami: design, implementation, and maintenance</li>
-                  <li>Tsunami Disaster Governance, Policy, and Justice </li>
-                  <li>Mainstreaming DRR into Urban Planning</li>
-                  <li>MHEWS</li>
-                  <li>Cascading and compound hazards, systemic risk</li>
-                </ul>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Session 4</h3>
+                <div class="desc">
+                  <strong>Tsunami Detection, Warning and Dissemination</strong>
+                  <ul>
+                    <li>
+                      How to Enchance Timeliness and Accuracy of Tsunami
+                      Warnings? (3 speakers)
+                    </li>
+                    <li>
+                      How Do We Ensure Tsunami Warnings Reach All in the
+                      Community (3 speakers)
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <!--//content-->
             </div>
-            <!--//content-->
-          </div>
-          <!--//item-->
+            <!--//item-->
+            <div class="item item-other">
+              <div class="meta">
+                <h4 class="time mb-3">14:00 - 15:00</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Session 5</h3>
+                <div class="desc">
+                  <strong
+                    >Achieving 100% Communities at Risk to be Prepared for and
+                    Resilient to Tsunami by 2030</strong
+                  >
+                  <ul>
+                    <li>
+                      Progress of UNESCO IOC Tsunami Ready recognition programme
+                      (3 speakers)
+                    </li>
+                    <li>
+                      Synergizing Tsunami Ready with national programmes for
+                      tsunami preparedness (3 speakers)
+                    </li>
+                    <li>Tsunami Ready Coalition (2 speakers)</li>
+                  </ul>
+                </div>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//item-->
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">16:15 - 17:30</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Session 6</h3>
+                <div class="desc">
+                  <strong> Other Critical Issues </strong>
+                  <ul>
+                    <li>
+                      Social and Humanities perspective in Tsunami Science and
+                      Tsunami Early Warning System
+                    </li>
+                    <li>
+                      Critical infrastructure ready for tsunami: design,
+                      implementation, and maintenance
+                    </li>
+                    <li>Tsunami Disaster Governance, Policy, and Justice</li>
+                    <li>Mainstreaming DRR into Urban Planning</li>
+                    <li>MHEWS</li>
+                    <li>Cascading and compound hazards, systemic risk</li>
+                  </ul>
+                </div>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//item-->
           </div>
           <!--//tab-2-content-->
           <div
@@ -825,7 +1002,10 @@
                   <ul>
                     <li>The Tsunami Museum of Aceh</li>
                     <li>Affected area: Lampuu</li>
-                    <li>Tsunami Ready Village: Inauguration Tsunami Ready and Tsunami Drill</li>
+                    <li>
+                      Tsunami Ready Village: Inauguration Tsunami Ready and
+                      Tsunami Drill
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -847,12 +1027,11 @@
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">
-                  Session 7
-                </h3>
+                <h3 class="title mb-3">Session 7</h3>
                 <div class="desc">
                   <strong
-                    >Contibutions of TEWS to global initiatives: UN OCean Decade, SDGs, SFDRR, COP28, EWS4ALL, MCR2030</strong
+                    >Contibutions of TEWS to global initiatives: UN OCean
+                    Decade, SDGs, SFDRR, COP28, EWS4ALL, MCR2030</strong
                   >
                 </div>
               </div>
@@ -870,10 +1049,15 @@
                   <strong>Wrap up/Synthesis/Way Forward</strong>
                   <ul>
                     <li>
-                      An outcome document, drawing upon achievements, gaps, challenges, and priorities from each session, including pre-event  7 session moderators present brief summaries  input for the draft Banda Aceh Declaration
+                      An outcome document, drawing upon achievements, gaps,
+                      challenges, and priorities from each session, including
+                      pre-event  7 session moderators present brief summaries 
+                      input for the draft Banda Aceh Declaration
                     </li>
                     <li>
-                      Round Table Discussion on Way Forward (Chairs and TIC representatives each ICG, IUGG expert, Chair ODTP Science Committee)
+                      Round Table Discussion on Way Forward (Chairs and TIC
+                      representatives each ICG, IUGG expert, Chair ODTP Science
+                      Committee)
                     </li>
                   </ul>
                 </div>
@@ -891,20 +1075,28 @@
                 <div class="desc">
                   <ol>
                     <li>Indigenous Story-Teller – Pak Ngah</li>
-                    <li>Hand-over price to the Indian Ocean Youth Tsunami Conversation and Campaign (IOYTCC) Winners (4 Indian Ocean competition regions)</li>
+                    <li>
+                      Hand-over price to the Indian Ocean Youth Tsunami
+                      Conversation and Campaign (IOYTCC) Winners (4 Indian Ocean
+                      competition regions)
+                    </li>
                     <li>Winner announcement for best poster presentation</li>
-                    <li>Winner announcement for school children art/drawing competition</li>
+                    <li>
+                      Winner announcement for school children art/drawing
+                      competition
+                    </li>
                     <li>Closing remarks:</li>
                     <ul>
                       <li>Head of BMKG</li>
                       <li>Representative of the Local Goverment</li>
                       <li>Representative of UNESCO IOC</li>
-                      <li>Representative of the Goverment (Officially Closed the Event)</li>
+                      <li>
+                        Representative of the Goverment (Officially Closed the
+                        Event)
+                      </li>
                       <li>Banda Aceh Declaration (in one powerful sentence)</li>
                     </ul>
-                    <li>
-                      Press Conference
-                    </li>
+                    <li>Press Conference</li>
                   </ol>
                 </div>
               </div>
@@ -919,13 +1111,17 @@
               <div class="content">
                 <h3 class="title mb-3">Session 6</h3>
                 <div class="desc">
-                  <strong>
-                    Other Critical Issues
-                  </strong>
+                  <strong> Other Critical Issues </strong>
                   <ul>
-                    <li>Social and Humanities perspective in Tsunami Science and Tsunami Early Warning System</li>
-                    <li>Critical infrastructure ready for tsunami: design, implementation, and maintenance</li>
-                    <li>Tsunami Disaster Governance, Policy, and Justice </li>
+                    <li>
+                      Social and Humanities perspective in Tsunami Science and
+                      Tsunami Early Warning System
+                    </li>
+                    <li>
+                      Critical infrastructure ready for tsunami: design,
+                      implementation, and maintenance
+                    </li>
+                    <li>Tsunami Disaster Governance, Policy, and Justice</li>
                     <li>Mainstreaming DRR into Urban Planning</li>
                     <li>MHEWS</li>
                     <li>Cascading and compound hazards, systemic risk</li>
@@ -938,9 +1134,9 @@
           </div>
           <!--//tab-4-content-->
         </div>
-        
+
         <!--//schedule-tab-content-->
-        <div class="schedule-cta text-center mx-auto">
+        <div class="schedule-cta text-center mx-auto d-none">
           <a
             href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
             class="btn btn-primary btn-lg me-md-2 d-block d-md-inline-block mb-3 mb-md-0"
@@ -1124,35 +1320,57 @@
       class="venue-section section theme-bg-primary text-white"
     >
       <div class="container">
-        <h5 class="text-center text-white">Day 1 & Day 2</h5>
-        <h3 class="section-heading text-center mb-5 text-white">Banda Aceh Convention Hall</h3>
+        <h4 class="text-center text-white">Day 1 & Day 2</h4>
+        <h3 class="section-heading text-center mb-5 text-white">
+          Banda Aceh Convention Hall
+        </h3>
         <div class="row gx-5 py-lg-5">
           <div class="col-12 col-lg-5 h-100">
             <div class="desc">
               <h4 class="text-white mb-3">Location</h4>
               <p>
-                Day 1 and day 2 event wil be held in Banda Aceh Convention Hall, Jl. T. Panglima Nyak Makam, Kota Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh.
+                Day 1 and day 2 event wil be held in Banda Aceh Convention Hall,
+                Jl. T. Panglima Nyak Makam, Kota Baru, Kec. Kuta Alam, Kota
+                Banda Aceh, Aceh.
               </p>
-              <div class="mapouter w-full"><div class="gmap_canvas w-full"><iframe class="w-full" width="347" height="260" id="gmap_canvas" src="https://maps.google.com/maps?q=Balai+Meuseuraya+Aceh&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://timenowin.net/">online clock</a><br><a href="https://www.analarmclock.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 260px;width: 347px;}</style><a href="https://www.mapembed.net">embedding maps in website</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 260px;width: 347px;}</style></div></div>
+              <div class="mapouter w-full">
+                <div class="gmap_canvas w-full">
+                  <iframe
+                    class="w-full"
+                    width="347"
+                    height="260"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Balai+Meuseuraya+Aceh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Map"
+                  ></iframe>
+                </div>
+              </div>
             </div>
             <!--//desc-->
           </div>
           <!--//col-->
           <div class="col-12 col-lg-7 relative mt-2 mt-lg-0">
-            <div class="figures-holder d-lg-flex" style="position: relative;">
-              <div class="figure figure-2 w-lg-half">
+            <div class="figures-holder d-lg-flex" style="position: relative">
+              <div class="figure figure-2">
                 <img
                   class="shadow"
                   src="dist/images/venue/balai-aceh-1.jpg"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </div>
-              <div class="figure figure-1 w-lg-half">
+              <div class="figure figure-1">
                 <img
                   class="shadow"
                   src="dist/images/venue/balai-aceh.jpg"
                   alt=""
-                  style="height: 328px; object-fit: cover; width: 100%;"
+                  width="100%"
+                  height="auto"
                 />
               </div>
             </div>
@@ -1164,16 +1382,20 @@
       </div>
       <!--//container-->
       <div class="container">
-        <h5 class="text-center text-white">Day 4</h5>
-        <h3 class="section-heading text-center mb-5 text-white">Hermes Palace by Bencoolen Hotel</h3>
+        <h4 class="text-center text-white">Day 4</h4>
+        <h3 class="section-heading text-center mb-5 text-white">
+          Hermes Palace by Bencoolen Hotel
+        </h3>
         <div class="row gx-5 py-lg-5">
           <div class="col-12 col-lg-7 relative">
-            <div class="figures-holder d-lg-flex" style="position: relative;">
+            <div class="figures-holder d-lg-flex" style="position: relative">
               <div class="figure figure-2">
                 <img
                   class="shadow"
                   src="dist/images/venue/hermes.jpg"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </div>
               <div class="figure figure-1">
@@ -1181,6 +1403,8 @@
                   class="shadow"
                   src="dist/images/venue/hermes-1.jpg"
                   alt=""
+                  width="100%"
+                  height="auto"
                 />
               </div>
             </div>
@@ -1191,9 +1415,25 @@
             <div class="desc">
               <h4 class="text-white mb-3">Location</h4>
               <p>
-                Day 4 event wil be held in Hermes Palace by Bencoolen Hotel, Jl. T. Panglima Nyak Makam Banda Aceh, Aceh 23117 Indonesia
+                Day 4 event wil be held in Hermes Palace by Bencoolen Hotel, Jl.
+                T. Panglima Nyak Makam Banda Aceh, Aceh 23117 Indonesia
               </p>
-              <div class="mapouter" style="width: 100%;"><div class="gmap_canvas" style="width: 100%;"><iframe style="width: 100%;" width="347" height="260" id="gmap_canvas" src="https://maps.google.com/maps?q=Hermes+Palace+ny+Bencoolen&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://timenowin.net/">online clock</a><br><a href="https://www.analarmclock.com/"></a><br><style>.mapouter{position: relative;text-align: right;height: 260px;width: 347px;}</style><a href="https://www.mapembed.net">embedding maps in website</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 260px;width: 347px;}</style></div></div>
+              <div class="mapouter" style="width: 100%">
+                <div class="gmap_canvas" style="width: 100%">
+                  <iframe
+                    style="width: 100%"
+                    width="347"
+                    height="260"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=Hermes+Palace+ny+Bencoolen&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Map"
+                  ></iframe>
+                </div>
+              </div>
             </div>
             <!--//desc-->
           </div>
@@ -1260,30 +1500,48 @@
     </section>
     <!--//sponsors-section-->
 
-    <footer class="footer py-5 theme-bg-white" style="color: black;">
-      <div class="container d-flex" style="flex-wrap: wrap; gap: 20px;">
+    <footer class="footer py-5 theme-bg-white" style="color: black">
+      <div class="container d-flex" style="flex-wrap: wrap; gap: 20px">
         <div id="logo d-flex">
-          <img class="me-3" src="dist/images/logo-bmkg.png" alt="" style="width: 99px;">
-          <img src="dist/images/unesco.jpg" alt="" style="width: 129px;">
+          <img
+            class="me-3"
+            src="dist/images/logo-bmkg.png"
+            alt=""
+            width="99"
+            height="auto"
+          />
+          <img src="dist/images/unesco.jpg" alt="" width="129" height="auto" />
         </div>
-        <div class="vertical-line" style="background: #098dcf; height: 100px; width: 5px;"></div>
+        <div
+          class="vertical-line"
+          style="background: #098dcf; height: 100px; width: 5px"
+        ></div>
         <div class="">
           <div class="">
-            <i class="fa-solid fa-envelope me-2" style="color: #098dcf;"></i> committee.gts@bmkg.go.id
+            <i class="fa-solid fa-envelope me-2" style="color: #098dcf"></i>
+            <a
+              href="mailto:committee.gts@bmkg.go.id"
+              target="_blank"
+              style="color: blue"
+              >committee.gts@bmkg.go.id</a
+            >
           </div>
           <div class="">
-            <i class="fa-solid fa-house me-2 mt-2" style="color: #098dcf;"></i> Jl. Angkasa 1 No. 2, Kemayoran, Jakarta Pusat
+            <i class="fa-solid fa-house me-2 mt-2" style="color: #098dcf"></i>
+            Jl. Angkasa 1 No. 2, Kemayoran, Jakarta Pusat
           </div>
         </div>
       </div>
       <div class="container text-center mt-2">
         <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
         <small class="copyright"
-          >Designed with <i class="fas fa-heart" style="color: #ec645e"></i> by
-          <a href="http://themes.3rdwavemedia.com" target="_blank" style="color: blue;"
+          >Theme by by
+          <a
+            href="http://themes.3rdwavemedia.com"
+            target="_blank"
+            style="color: blue"
             >Xiaoying Riley</a
-          >
-          for developers</small
+          ></small
         >
       </div>
       <!--//container-->
