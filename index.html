@@ -64,6 +64,16 @@
 
     <!-- Custom CSS -->
     <style>
+      .header {
+        padding: 0;
+      }
+      .container-fluid {
+        background: #fff;
+        padding: 8px 20px;
+      }
+      .navbar-nav .nav-link {
+        color: inherit;
+      }
       th {
         background: #098dcf !important;
         color: white !important;
@@ -80,7 +90,7 @@
         color: gray !important;
       }
       .w-logo {
-        width: 35px !important;
+        width: 45px !important;
         height: auto !important;
       }
       .w-full {
@@ -117,6 +127,9 @@
       .date-table {
         width: 115px;
       }
+      .footer small {
+        font-size: 0.5em;
+      }
       @media screen and (min-width: 992px) {
         .w-lg-half {
           width: 40%;
@@ -138,9 +151,9 @@
   <body>
     <header id="header" class="header fixed-top">
       <div class="branding">
-        <div class="container-fluid" style="padding-left: 0px">
+        <div class="container-fluid">
           <nav class="main-nav navbar navbar-expand-lg">
-            <div
+            <!-- <div
               class="site-logo theme-bg-primary"
               style="
                 padding-left: 5px;
@@ -150,22 +163,23 @@
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
               "
-            >
+            > -->
+            <div>
               <a class="scrollto" href="#hero-block">
+                <img
+                  class="logo-icon w-logo"
+                  src="dist/images/unesco-ioc.png"
+                  alt="logo"
+                  width="60"
+                  height="auto"
+                  style="width: 60px !important"
+                />
                 <img
                   class="logo-icon w-logo"
                   src="dist/images/logo-bmkg.png"
                   alt="logo"
-                  width="99"
+                  width="45"
                   height="auto"
-                />
-                <img
-                  class="logo-icon w-logo"
-                  src="dist/images/unesco.svg"
-                  alt="logo"
-                  width="150"
-                  height="auto"
-                  style="width: 150px !important"
                 />
               </a>
             </div>
@@ -276,16 +290,16 @@
           class="text-center pt-5 pb-4"
           style="font-size: 2em; font-weight: bold"
         >
-          <strong>About Event</strong>
+          <strong>About the Event</strong>
         </div>
         <div class="section-intro single-col-max mx-auto mb-5 text-center">
-          The UNESCO-IOC and BMKG have initiatives to hold the UNESCO-IOC Global
-          Tsunami Symposium on the Reflection of the Two Decades Indian Ocean
-          Tsunami 2004 Commemoration. The symposium will bring together
-          scientists, engineers, practitioners, and policy-maker from all over
-          the globe to discuss the state of the art and the latest advances in
-          tsunami science and engineering for better tsunami disaster
-          preparedness, and mitigation.
+          The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
+          Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
+          Tsunami 2004. The symposium will bring together scientists,
+          researchers, engineers, practitioners, and policy-maker from all over
+          the globe to discuss the state of the art and the latest advancement
+          on tsunami science, engineering, and early warning system for better
+          tsunami disaster preparedness and mitigation.
         </div>
         <div
           class="d-flex mx-auto"
@@ -296,16 +310,15 @@
             style="border-radius: 10px"
           >
             <div class="mb-2 p-1 blue-heading" style="font-weight: bold">
-              Objective
+              Objectives
             </div>
             <table class="table">
               <tbody>
                 <tr>
-                  <td scope="col" class="align-middle">
-                    <i class="fas fa-check-circle" style="color: #098dcf"></i>
-                  </td>
+                  <td scope="col" class="align-middle"></td>
                   <td class="text-start">
-                    To commemorate 2 decades after 2004 Indian Ocean Tsunami.
+                    In commemoration of 2 decades after the devastating 2004
+                    Indian Ocean Tsunami, the symposium overall objectives are:
                   </td>
                 </tr>
                 <tr>
@@ -332,8 +345,8 @@
                   </td>
                   <td class="text-start">
                     To identify synergy with global challenges and coherence
-                    with global commitments. Shared learnings between countries
-                    and application in the Regional Oceans.
+                    with global commitments especially the UN Decade for Ocean
+                    Science for Sustainable Development.
                   </td>
                 </tr>
                 <tr>
@@ -341,7 +354,9 @@
                     <i class="fas fa-check-circle" style="color: #098dcf"></i>
                   </td>
                   <td class="text-start">
-                    To gather global tsunami community.
+                    Share learnings from countries of the different region as
+                    the coordination of the regional tsunami early warning
+                    systems.
                   </td>
                 </tr>
               </tbody>
@@ -352,7 +367,7 @@
             style="border-radius: 10px"
           >
             <div class="mb-2 p-1 blue-heading" style="font-weight: bold">
-              Scopes
+              Events
             </div>
             <table class="table">
               <tbody>
@@ -408,7 +423,7 @@
 
     <section id="speakers-section" class="speakers-section section">
       <div class="container">
-        <h3 class="section-heading text-center mb-3">Steering Commitee</h3>
+        <h3 class="section-heading text-center mb-3">Speakers</h3>
         <div class="section-intro text-center single-col-max mx-auto mb-5">
           To guide the Programme Organizing Committee on the substance of
           symposium: the themes, topics, programme, expertise and speakers, etc.
@@ -417,7 +432,7 @@
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
               <img
-                src="dist/images/speakers/bmkg.jpg"
+                src="dist/images/speakers/dwikorita.jpg"
                 class="card-img-top speaker-image rounded-0"
                 alt=""
               />
@@ -441,7 +456,7 @@
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
               <img
-                src="dist/images/speakers/bnpb.png"
+                src="dist/images/speakers/suharyanto.jpg"
                 class="card-img-top speaker-image rounded-0"
                 alt=""
               />
@@ -487,12 +502,12 @@
           <div class="col-6 col-lg-3 mb-4">
             <div class="card rounded-0">
               <img
-                src="dist/images/speakers/bernaldo.png"
+                src="dist/images/speakers/bernardo.jpg"
                 class="card-img-top speaker-image rounded-0"
                 alt=""
               />
               <div class="card-body">
-                <h4 class="card-title mb-2">Mr. Bernaldo Aliaga</h4>
+                <h4 class="card-title mb-2">Mr. Bernardo Aliaga</h4>
                 <div class="card-text mb-3">
                   <div class="meta">
                     Head Tsunami Resilience Section UNESCO-IOC
@@ -1510,7 +1525,12 @@
             width="99"
             height="auto"
           />
-          <img src="dist/images/unesco.jpg" alt="" width="129" height="auto" />
+          <img
+            src="dist/images/unesco-ioc.png"
+            alt=""
+            width="129"
+            height="auto"
+          />
         </div>
         <div
           class="vertical-line"
