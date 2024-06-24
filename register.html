@@ -1,182 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>2nd UNESCO IOC Global Tsunami Symposium</title>
-    
-        <!-- Meta -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
-          Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
-          Tsunami 2004."
-        />
-        <meta name="author" content="BMKG" />
-    
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="2nd UNESCO IOC Global Tsunami Symposium"
-        />
-        <meta
-          property="og:image"
-          content="https://infobmkg.github.io/dist/images/splash.png"
-        />
-        <meta
-          property="og:description"
-          content="The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
-          Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
-          Tsunami 2004."
-        />
-        <meta property="og:url" content="https://www.bmkg.go.id/" />
-    
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@infoBMKG" />
-        <meta name="twitter:creator" content="@infoBMKG" />
-        <meta
-          name="twitter:title"
-          content="2nd UNESCO IOC Global Tsunami Symposium"
-        />
-        <meta
-          name="twitter:description"
-          content="The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
-          Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
-          Tsunami 2004."
-        />
-        <meta
-          name="twitter:image"
-          content="https://infobmkg.github.io/dist/images/splash.png"
-        />
-    
-        <link rel="shortcut icon" href="dist/images/favicon.ico" />
-    
-        <!-- Google Font -->
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap"
-          rel="stylesheet"
-        />
-    
-        <!-- FontAwesome JS-->
-        <script defer src="dist/fontawesome/js/all.min.js"></script>
-    
-        <!-- Theme CSS -->
-        <link id="theme-style" rel="stylesheet" href="dist/css/theme.css" />
-    
-        <!-- Custom CSS -->
+  <head>
+    <title>2nd UNESCO IOC Global Tsunami Symposium</title>
 
-        <style>
-            .register-button{
-                border: 1px solid #303134;
-                border-radius: 4px;
-                color: #e8eaed;
-                font-family: arial, sans-serif;
-                font-size: 1.2rem;
-                padding: 10px;
-                text-align: center;
-                cursor: pointer;
-                user-select: none;
-                background-color: #0d6a98;
-            }
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
+      Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
+      Tsunami 2004."
+    />
+    <meta name="author" content="BMKG" />
 
-            .font-gray{
-                color: var(--bs-gray-300);
-            }
-            @media screen and (min-width: 700px) {
-                #hero-block{
-                    display: block !important;
-                }
-                #mobile-display{
-                    display: none !important;
-                }
-            }
-            @media screen and (max-width: 700px){
-                #mobile-display{
-                    display: block;
-                }
-            }
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="2nd UNESCO IOC Global Tsunami Symposium"
+    />
+    <meta
+      property="og:image"
+      content="https://infobmkg.github.io/dist/images/splash.png"
+    />
+    <meta
+      property="og:description"
+      content="The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
+      Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
+      Tsunami 2004."
+    />
+    <meta property="og:url" content="https://www.bmkg.go.id/" />
 
-        </style>
-        
-      </head>
-<body>
-    <div id="hero-block" class="hero-block d-none" style="height: 100vh;">
-        <div id="hero-carousel" class="hero-carousel carousel slide carousel-fade" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item-1 carousel-item active"></div>
-          </div>
-        </div>
-        <div class="hero-block-mask" style="background: rgba(0, 0, 0, .6) !important;"></div>
-        <div class="container-fluid" style="padding-left: 10px; padding-right: 10px;">
-            <div class="hero-text-block" style="max-width: 100% !important;">
-                <h1 class="hero-heading mb-2 font-gray" style="text-align: center; font-size: 3rem;">
-                    2nd UNESCO IOC Global Tsunami Symposium
-                </h1>
-                <div class="hero-meta font-gray" style="text-align: center; font-size: 2rem;">
-                    Two Decades After 2004 Indian Ocean Tsunami <br>
-                    <span> Reflection and the Way Forward </span>
-                </div>
-                <div class="hero-intro mb-4 font-gray" style="text-align: center; font-size: 1.5rem;">
-                    <svg class="svg-inline--fa fa-calendar-days me-2" aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-days" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"></path></svg><!-- <i class="far fa-calendar-alt me-2"></i> Font Awesome fontawesome.com -->11–14 November 2024
-                    <svg class="svg-inline--fa fa-location-dot mx-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg><!-- <i class="fas fa-map-marker-alt mx-2"></i> Font Awesome fontawesome.com -->Banda Aceh, Indonesia
-                </div>
-                <div class="hero-cta d-none">
-                  <a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a>
-                </div>
-                <h1 class="hero-heading mb-3 mt-5" style="text-align: center; font-size: 2rem;">
-                    Click Below for Registration
-                </h1>
-                <div class="d-flex flex-row flex-wrap justify-content-center gap-5">
-                    <button type="button" class="btn btn-primary register-button">Symposium</button>
-                    <button type="button" class="btn btn-primary register-button">Exhibition</button>
-                    <button type="button" class="btn btn-primary register-button">Ignite Stage</button>
-                </div>
-              </div>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@infoBMKG" />
+    <meta name="twitter:creator" content="@infoBMKG" />
+    <meta
+      name="twitter:title"
+      content="2nd UNESCO IOC Global Tsunami Symposium"
+    />
+    <meta
+      name="twitter:description"
+      content="The UNESCO-IOC and BMKG are organizing the 2nd UNESCO-IOC Global
+      Tsunami Symposium: Reflection of the Two Decades of the Indian Ocean
+      Tsunami 2004."
+    />
+    <meta
+      name="twitter:image"
+      content="https://infobmkg.github.io/dist/images/splash.png"
+    />
+
+    <link rel="shortcut icon" href="dist/images/favicon.ico" />
+
+    <!-- Google Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome JS-->
+    <script defer src="dist/fontawesome/js/all.min.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="dist/css/theme.css" />
+
+    <!-- Custom CSS -->
+    <style>
+      .header {
+        padding: 0;
+      }
+      .container-fluid {
+        background: #fff;
+        padding: 8px 20px;
+      }
+      .navbar-nav .nav-link {
+        color: inherit;
+      }
+      th {
+        background: #098dcf !important;
+        color: white !important;
+      }
+      .header-shrink-1 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+      .hero-heading span {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .nav-link-1 {
+        color: gray !important;
+      }
+      .w-logo {
+        width: 45px !important;
+        height: auto !important;
+      }
+      .w-full {
+        width: 100% !important;
+      }
+      .speaker-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      .blue-heading {
+        background: #098dcf;
+        color: #fff;
+      }
+      .bg-orange {
+        background-color: #ec645e !important;
+        color: white !important;
+        text-align: center;
+        /* font-weight: 600; */
+      }
+      .text-table {
+        text-align: center;
+        font-weight: 600;
+      }
+      .thead {
+        border-width: medium !important;
+      }
+      .a-color {
+        color: black !important;
+      }
+      .vertical-line {
+        display: none;
+      }
+      .date-table {
+        width: 125px;
+      }
+      .accomodation {
+        font-size: 16px;
+      }
+      .card-footer {
+        padding-top: 0;
+      }
+      .flight {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+      }
+      .footer small {
+        font-size: 0.5em;
+      }
+      @media screen and (min-width: 992px) {
+        .w-lg-half {
+          width: 40%;
+        }
+      }
+      @media screen and (min-width: 760px) {
+        .vertical-line {
+          display: block !important;
+        }
+      }
+      @media screen and (max-width: 767.98px) {
+        .hero-heading span {
+          font-size: 2rem;
+        }
+        .airplane {
+          height: 100px;
+          object-fit: contain;
+        }
+      }
+      .accom-hotel {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+      }
+      .flight-box {
+        border: solid white;
+        border-radius: 10px;
+        padding: 16px;
+      }
+      .presenter {
+        width: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header" class="header fixed-top">
+      <div class="branding">
+        <div class="container-fluid">
+          <nav class="main-nav navbar navbar-expand-lg">
+            <!-- <div
+              class="site-logo theme-bg-primary"
+              style="
+                padding-left: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+              "
+            > -->
+            <div>
+              <a class="" href="/">
+                <img
+                  class="logo-icon w-logo"
+                  src="dist/images/unesco-ioc.png"
+                  alt="logo"
+                  width="60"
+                  height="56"
+                  style="width: 60px !important"
+                />
+                <img
+                  class="logo-icon w-logo"
+                  src="dist/images/logo-bmkg.png"
+                  alt="logo"
+                  width="45"
+                  height="55"
+                />
+              </a>
+            </div>
+
+            <div class="navbar-btn order-lg-2">
+              <a
+                class="btn btn-secondary theme-bg-primary"
+                href="/register.html"
+                >Register</a
+              >
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navigation"
+              aria-controls="navigation"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              id="navigation"
+              class="navbar-collapse collapse justify-content-lg-end me-lg-3"
+            >
+              <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#speakers-section">Speakers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#schedule-section">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#venue-section">Venue</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#accomodation-section"
+                    >Accomodation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/#flight-section">Flight Info</a>
+                </li>
+              </ul>
+              <!--//nav-->
+            </div>
+            <!--//navabr-collapse-->
+          </nav>
+          <!--//main-nav-->
         </div>
         <!--//container-->
-    </div>
+      </div>
+      <!--//branding-->
+    </header>
+    <!--//header-->
 
-    <div id="mobile-display" class="container d-flex flex-column justify-content-center align-items-center">
-        <div class="mt-4" style="text-align: center; ">
-            <h2 style="color: var(--bs-primary); font-weight: bold;">
-                2nd UNESCO IOC Global Tsunami Symposium
-            </h2>
+    <div id="hero-block" class="hero-block" style="height: 300px">
+      <div
+        id="hero-carousel"
+        class="hero-carousel carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item-1 carousel-item active"></div>
+          <div class="carousel-item-2 carousel-item"></div>
+          <div class="carousel-item-3 carousel-item"></div>
         </div>
-        <div id="logo" class="mt-4 d-flex justify-content-center flex-row gap-3">
-            <div class="" style="width: fit-content;">
-                <a class="scrollto" href="#logo">
-                    <img
-                      class="logo-icon w-logo"
-                      src="dist/images/unesco-ioc.png"
-                      alt="logo"
-                      height="auto"
-                      style="width: 110px !important"
-                    />
-                </a>
-            </div>
-            <div class="" style="width: fit-content;">
-                <a class="scrollto" href="#logo">
-                    <img
-                        class="logo-icon w-logo"
-                        src="dist/images/logo-bmkg.png"
-                        alt="logo"
-                        height="auto"
-                        style="width: 90px !important"
-                        />
-                </a>
+      </div>
+      <div class="hero-block-mask"></div>
+      <div class="container">
+        <div
+          class="hero-text-block text-center"
+          style="max-width: inherit !important"
+        >
+          <div class="hero-meta mb-4">
+            2nd UNESCO IOC Global Tsunami Symposium
+          </div>
+          <div class="hero-meta mb-3">
+            <i class="far fa-calendar-alt me-2"></i>11&ndash;14 November 2024
+            <i class="fas fa-map-marker-alt mx-2"></i>Banda Aceh, Indonesia
+          </div>
 
-            </div>
+          <div class="hero-cta d-none">
+            <a
+              class="btn btn-primary btn-lg"
+              href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/"
+              target="_blank"
+              >Get Tickets</a
+            >
+          </div>
         </div>
-        <div class="mt-4">
-            <h3 style="text-align: center; color: var(--bs-secondary);">Register Here</h3>
-            <div class="d-flex flex-row flex-wrap justify-content-center gap-2">
-                <button type="button" class="btn btn-primary">Symposium</button>
-                <button type="button" class="btn btn-primary">Exhibition</button>
-                <button type="button" class="btn btn-primary">Ignite Stage</button>
-            </div>
-        </div>
+        <!--//hero-text-block-->
+      </div>
+      <!--//container-->
     </div>
-</body>
+    <!--//hero-block-->
+
+    <section
+      id="about-section"
+      class="about-section section theme-bg-light"
+      style="padding-top: 0px"
+    >
+      <div class="container pb-5">
+        <div
+          class="text-center pt-5 pb-4"
+          style="font-size: 2em; font-weight: bold"
+        >
+          <strong>Click Below for Registration</strong>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-4 p-4">
+            <div class="about-cta text-center">
+              <a
+                class="btn btn-secondary btn-lg"
+                href="https://forms.gle/4CWdQ3mEGjFgd6hf7"
+                target="_blank"
+                >Symposium</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 p-4">
+            <div class="about-cta text-center">
+              <a
+                class="btn btn-secondary btn-lg"
+                href="https://forms.gle/LnEfQwQPub8H4Wxv9"
+                target="_blank"
+                >Booth Exhibition</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 p-4">
+            <div class="about-cta text-center">
+              <a
+                class="btn btn-secondary btn-lg"
+                href="/register.html"
+                target="_blank"
+                >Ignite Stage</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!--//benefits-list-->
+        <div class="event-countdown text-center mt-4">
+          <h2 class="countdown-intro mb-2 text-center mb-3">
+            Event Starts In:
+          </h2>
+          <div id="countdown-box" class="countdown-box"></div>
+        </div>
+        <!--//event-countdown-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//about-section-->
+
+    <footer class="footer py-5 theme-bg-white" style="color: black">
+      <div
+        class="container d-flex"
+        style="flex-wrap: wrap; gap: 20px; justify-content: center"
+      >
+        <div id="logo d-flex">
+          <img
+            src="dist/images/unesco-ioc.png"
+            alt=""
+            width="80"
+            height="auto"
+          />
+          <img
+            class="me-3"
+            src="dist/images/logo-bmkg.png"
+            alt=""
+            width="60"
+            height="auto"
+          />
+        </div>
+        <div
+          class="vertical-line"
+          style="background: #098dcf; width: 5px"
+        ></div>
+        <div class="">
+          <div class="">
+            <i class="fa-solid fa-envelope me-2" style="color: #098dcf"></i>
+            <a
+              href="mailto:committee.gts@bmkg.go.id"
+              target="_blank"
+              style="color: blue"
+              >committee.gts@bmkg.go.id</a
+            >
+          </div>
+          <div class="">
+            <i class="fa-solid fa-house me-2 mt-2" style="color: #098dcf"></i>
+            Jl. Angkasa 1 No. 2, Kemayoran, Jakarta Pusat
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-2">
+        <!--/* This template is free as long as you keeh6 the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright"
+          >Theme by by
+          <a
+            href="http://themes.3rdwavemedia.com"
+            target="_blank"
+            style="color: blue"
+            >Xiaoying Riley</a
+          ></small
+        >
+      </div>
+      <!--//container-->
+    </footer>
+
+    <!-- Javascript -->
+    <script src="dist/plugins/popper.min.js"></script>
+    <script src="dist/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/plugins/smoothscroll.min.js"></script>
+    <script src="dist/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>
