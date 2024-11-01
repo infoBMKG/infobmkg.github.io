@@ -100,9 +100,13 @@
         width: 100% !important;
       }
       .speaker-image {
-        width: 100%;
-        height: 300px;
+        width: 320px;
+        height: 350px;
         object-fit: cover;
+      }
+      .image-container{
+        display: flex;
+        justify-content: center;
       }
       .blue-heading {
         background: #098dcf;
@@ -516,8 +520,23 @@
     <section id="speakers-section" class="speakers-section section">
       <div class="container">
         <h3 class="section-heading text-center mb-5">Speakers</h3>
-        <div class="row">
-          <div class="col-6 col-lg-3 mb-4">
+        <div class="row gx-5">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 image-container">
+            <div class="card rounded-0">
+              <img
+                src="dist/images/speakers/vidar-helgesen-1.jpg"
+                class="card-img-top speaker-image rounded-1"
+                alt=""
+              />
+              <div class="card-body bg-white">
+                <h4 class="card-title mb-2 text-center">Vidar Helgesen</h4>
+                <!--//card-text-->
+              </div>
+              <!--//card-->
+            </div>
+            <!--//card-->
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 image-container">
             <div class="card rounded-0">
               <img
                 src="dist/images/speakers/dwikorita.jpg"
@@ -541,7 +560,7 @@
             </div>
             <!--//card-->
           </div>
-          <div class="col-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 image-container">
             <div class="card rounded-0 bg-white">
               <img
                 src="dist/images/speakers/suharyanto.jpg"
@@ -557,7 +576,31 @@
             </div>
             <!--//card-->
           </div>
-          <div class="col-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 image-container">
+            <div class="card rounded-0">
+              <img
+                src="dist/images/speakers/Gita.jpg"
+                class="card-img-top speaker-image"
+                alt=""
+              />
+              <div class="card-body bg-white">
+                <h4 class="card-title mb-2 text-center">
+                  Gita Sabharwal
+                </h4>
+                <!-- <div class="card-text mb-3">
+                  <div class="meta">Head of BMKG</div>
+                  <div class="meta">Chair of UNESCO IOC/ICG IOTWMS</div>
+                </div>
+                //card-text -->
+              </div>
+              <!--//card-->
+              <!-- <div class="card-footer text-muted">
+                //social-list
+              </div> -->
+            </div>
+            <!--//card-->
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 image-container">
             <div class="card rounded-0">
               <img
                 src="dist/images/speakers/maki.jpg"
@@ -573,16 +616,17 @@
             </div>
             <!--//card-->
           </div>
-          <div class="col-6 col-lg-3 mb-4">
+          <div class="col-12 col-sm-6 col-lg-4 mb-4 image-container">
             <div class="card rounded-0">
               <img
-                src="dist/images/speakers/bernardo.jpg"
+                src="dist/images/speakers/kishimura-1.jpg"
                 class="card-img-top speaker-image rounded-1"
                 alt=""
               />
               <div class="card-body bg-white">
-                <h4 class="card-title mb-2 text-center">Mr. Bernardo Aliaga</h4>
-                <!--//card-text-->
+                <h4 class="card-title mb-2 text-center">
+                  Prof. Shunichi Koshimura
+                </h4>
               </div>
               <!--//card-->
             </div>
@@ -617,7 +661,7 @@
                     class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3"
                     style="font-size: 1.5rem; font-weight: bold"
                   >
-                    <div class="">8&ndash;10</div>
+                    <div class="">8&ndash;9</div>
                     <div class="">Nov</div>
                   </div>
                 </td>
@@ -641,6 +685,38 @@
                       Theme: "Role of Science and Practice in Building
                       Resilience"
                     </p>
+                    <div class="d-none" style="color: #415b78">
+                      Special Events: Tsunami United, Drawing Competition
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="date-table">
+                  <div
+                    class="d-flex flex-column justify-content-center align-items-center theme-bg-primary text-white p-3"
+                    style="font-size: 1.5rem; font-weight: bold"
+                  >
+                    <div class="">10&ndash;12</div>
+                    <div class="">Nov</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="d-flex flex-column" style="font-size: 1.2rem">
+                    <div
+                      class=""
+                      style="
+                        font-size: 1.4rem;
+                        color: #ec645e;
+                        font-weight: bold;
+                      "
+                    >
+                      Side Event
+                    </div>
+                    <div class="" style="color: #098dcf; font-size: 1.5rem">
+                      <strong> Booth Exhibitions, Posters, Ignite Stages with Rumah Resiliensi Concept, </strong> 
+                      located at Symposium venue BMA entrance and open spaces
+                    </div>
                     <div class="d-none" style="color: #415b78">
                       Special Events: Tsunami United, Drawing Competition
                     </div>
@@ -722,8 +798,23 @@
           class="schedule-nav nav nav-pills nav-fill"
           id="myTab"
           role="tablist"
+          style="display: flex; gap: 4px;"
         >
-          <li class="nav-item me-2">
+          <li class="nav-item" style="padding: 1px;">
+            <a
+              class="nav-link"
+              id="tab-0"
+              data-bs-toggle="tab"
+              href="#tab-0-content"
+              role="tab"
+              aria-controls="tab-0-content"
+              aria-selected="false"
+            >
+              <span class="heading">Opening</span>
+              <span class="meta">(10, Nov 2024)</span>
+            </a>
+          </li>
+          <li class="nav-item" style="padding: 1px;">
             <a
               class="nav-link active"
               id="tab-1"
@@ -737,7 +828,7 @@
               <span class="meta">(Mon 11, Nov 2024)</span>
             </a>
           </li>
-          <li class="nav-item me-2">
+          <li class="nav-item" style="padding: 1px;">
             <a
               class="nav-link"
               id="tab-2"
@@ -751,7 +842,7 @@
               <span class="meta">(Tue 12, Nov 2024)</span>
             </a>
           </li>
-          <li class="nav-item me-2">
+          <li class="nav-item" style="padding: 1px;">
             <a
               class="nav-link"
               id="tab-3"
@@ -765,7 +856,7 @@
               <span class="meta">(Wed 13, Nov 2024)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="padding: 1px;">
             <a
               class="nav-link"
               id="tab-4"
@@ -784,6 +875,64 @@
         <!-- Tab panes -->
         <div class="schedule-tab-content tab-content">
           <div
+          class="tab-pane"
+          id="tab-0-content"
+          role="tabpanel"
+          aria-labelledby="tab-0"
+        >
+          <div class="item item-talk">
+            <div class="meta">
+              <h4 class="time mb-3">9:00 &ndash; 10:30</h4>
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">Opening of Side Event <br> 
+                BMA-Balai Meuseraya Aceh</h3>
+              <div class="desc">
+                <ul>
+                  <li>Prayer</li>
+                  <li>National Anthem</li>
+                  <li>Opening Art</li>
+                  <li>Report of The Side Event: Deputy of Geophysics BMKG</li>
+                  <li>
+                    Welcoming Remarks: Head of BMKG
+                  </li>
+                  <li>Opening the Side Event by Cutting Ribbon</li>
+                  <li>Head of BMKG Visit to the Booths and Poster Session</li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item item-talk">
+            <div class="meta">
+              <h4 class="time mb-3">18:30 &ndash; 20:30</h4>
+            </div>
+            <!--//meta-->
+            <div class="content">
+              <h3 class="title mb-3">Gala Dinner<br> 
+                Hermes Hotel
+              </h3>
+              <div class="desc">
+                <ul>
+                  <li>Registration</li>
+                  <li>Opening MC + Prayer</li>
+                  <li>Opening Art</li>
+                  <li>Welcoming Remarks: Head of BMKG</li>
+                  <li>
+                    Dinner Accompanied by Live Music
+                  </li>
+                  <li>Closing Deputy of Geophysics BMKG</li>
+                </ul>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          </div>
+          <!--//tab-0-content-->
+          <div
             class="tab-pane active"
             id="tab-1-content"
             role="tabpanel"
@@ -791,7 +940,7 @@
           >
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">8:30 &ndash; 9:00</h4>
+                <h4 class="time mb-3">8:00 &ndash; 9:00</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -801,20 +950,17 @@
             </div>
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">9:00 &ndash; 12:00</h4>
+                <h4 class="time mb-3">9:00 &ndash; 10:40</h4>
               </div>
               <!--//meta-->
               <div class="content">
                 <h3 class="title mb-3">Opening Ceremony</h3>
                 <div class="desc">
                   <ul>
+                    <li>Reciting Al Quran and Prayer</li>
                     <li>Indonesian Anthem</li>
-                    <li>Prayer (Doa)</li>
-                    <li>Moment of Silence (Video Smong and Eyewitness)</li>
-                    <li>Opening Performance (Saman Dance)</li>
-                    <li>
-                      Report from Chair, Programme Organising Committee (POC)
-                    </li>
+                    <li>Thearetical Performane Tsunami Aceh & Moment of Silence</li>
+                    <li>Report from Chair, Programme Organising Committee (POC)</li>
                   </ul>
                 </div>
               </div>
@@ -830,15 +976,15 @@
                 <h3 class="title mb-3">Welcoming Remarks</h3>
                 <div class="desc">
                   <ul>
+                    <li>Head of BMKG as Host - Prof. Dwikorita Karnawati</li>
                     <li>Governor of Nagroe Aceh Darussalam Province</li>
                     <li>
-                      Director and representative of UNESCO, Jakarta Office
+                      ADG/ES of UNESCO-IOC as Co-Host - Mr. Vidar Helgesen
                     </li>
                     <li>
-                      Assistant Director General of UNESCO and Executive
-                      Secretary Intergovernmental Oceanographic Commission (IOC)
+                      UNDRR - Mr. Marco Toscano Rivalta
                     </li>
-                    <li>The UN Resident Coordinator for Indonesia</li>
+                    <li>The UN Resident Coordinator for Indonesia - Ms. Gita Sabharwal</li>
                   </ul>
                 </div>
               </div>
@@ -853,7 +999,7 @@
               <div class="content">
                 <h3 class="title mb-3">Opening Remark</h3>
                 <div class="desc">
-                  <strong>President, Government of Indonesia</strong>
+                  <strong>Government of Indonesia</strong>
                 </div>
               </div>
               <!--//content-->
@@ -864,12 +1010,7 @@
               </div> -->
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Opening Gong</h3>
-                <div class="desc">
-                  <strong
-                    >Opening Gong by RI1 with VVIP dan Press Conference</strong
-                  >
-                </div>
+                <h3 class="title mb-3">Opening with Rampa'i Government of Indonesia with VVIP</h3>
               </div>
               <!--//content-->
             </div>
@@ -881,16 +1022,30 @@
               <!--//meta-->
               <div class="content">
                 <h3 class="title mb-3">
-                  Recognition of New Tsunami Ready Community
+                  Group Photo
                 </h3>
               </div>
               <!--//content-->
             </div>
             <!--//item-->
             <div class="item item-talk mt-1">
-              <!-- <div class="meta">
-                <h4 class="time mb-3">9:00 &ndash; 12:00</h4>
-              </div> -->
+              <div class="meta">
+                <h4 class="time mb-3">10:40 &ndash; 11:00</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Press Conference</h3>
+                <div class="desc">
+                  <strong>International and National Media + Coffee Break</strong>
+                </div>
+              </div>
+              <!--//content-->
+            </div>
+            <!-- //item -->
+            <div class="item item-talk mt-1">
+              <div class="meta">
+                <h4 class="time mb-3">11:00 &ndash; 11:45</h4>
+              </div>
               <!--//meta-->
               <div class="content">
                 <h3 class="title mb-3">Keynote Speeches</h3>
@@ -918,21 +1073,18 @@
             <!-- //item -->
             <div class="item item-talk mt-1">
               <div class="meta">
-                <h4 class="time mb-3">12:00 &ndash; 12:30</h4>
+                <h4 class="time mb-3">11:45 &ndash; 12:00</h4>
               </div>
               <!--//meta-->
               <div class="content">
-                <h3 class="title mb-3">Press Conference</h3>
-                <div class="desc">
-                  <strong>Group Photo Session and Press Conference</strong>
-                </div>
+                <h3 class="title mb-3">Recognition of New Tsunami Ready Community Inauguration</h3>
               </div>
               <!--//content-->
             </div>
             <!-- //item -->
             <div class="item item-talk mt-1">
               <div class="meta">
-                <h4 class="time mb-3">12:30 &ndash; 13:30</h4>
+                <h4 class="time mb-3">12:00 &ndash; 13:00</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -946,7 +1098,7 @@
             <!--//item-->
             <div class="item item-talk mt-1">
               <div class="meta">
-                <h4 class="time mb-3">13:00 &ndash; 15:00</h4>
+                <h4 class="time mb-3">13:00 &ndash; 15:10</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -1021,9 +1173,23 @@
               <!--//content-->
             </div>
             <!--//item-->
+            <div class="item item-talk mt-1">
+              <div class="meta">
+                <h4 class="time mb-3">15:10 &ndash; 15:25</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Lunch Break</h3>
+                <!-- <div class="desc">
+                  <strong>Lunch Break</strong>
+                </div> -->
+              </div>
+              <!--//content-->
+            </div>
+            <!--//item-->
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">15:30 &ndash; 17:00</h4>
+                <h4 class="time mb-3">15:25 &ndash; 17:00</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -1054,7 +1220,7 @@
                       </div>
                     </li>
                     <li>
-                      Evaluatingnon-seismic generated tsunami modelling
+                      Evaluating non-seismic generated tsunami modelling
                       <div class="d-flex flex-row align-items-center">
                         <div class="">
                           <img
@@ -1067,24 +1233,6 @@
                         </div>
                         <div style="margin-left: 4px; font-weight: 600">
                           Dr. Aditya R. Gusman and Prof. Yuichiro Tanioka
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      Developing awareness and preparedness of communities for
-                      tsunamis generated by non-seismic sources
-                      <div class="d-flex flex-row align-items-center">
-                        <div class="">
-                          <img
-                            class="presenter"
-                            src="dist/images/users.png"
-                            alt=""
-                            width="20"
-                            height="20"
-                          />
-                        </div>
-                        <div style="margin-left: 4px; font-weight: 600">
-                          Dr. Laura Kong
                         </div>
                       </div>
                     </li>
@@ -1104,7 +1252,7 @@
           >
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">9:00 &ndash; 10:30</h4>
+                <h4 class="time mb-3">9:00 &ndash; 10:40</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -1151,6 +1299,23 @@
                         </div>
                       </div>
                     </li>
+                    <li>
+                      Developing awareness and preparedness of communities for tsunamis generated by seismic, non-seismic, and complex sources
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="">
+                          <img
+                            class="presenter"
+                            src="dist/images/users.png"
+                            alt=""
+                            width="20"
+                            height="20"
+                          />
+                        </div>
+                        <div style="margin-left: 4px; font-weight: 600">
+                          Dr. Laura Kong
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -1159,7 +1324,17 @@
             <!--//item-->
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">11:00 &ndash; 12:30</h4>
+                <h4 class="time mb-3">10:00 &ndash; 10:55</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Coffee Break</h3>
+              </div>
+              <!--//content-->
+            </div>
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">10:55 &ndash; 12:15</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -1234,6 +1409,16 @@
               <!--//content-->
             </div>
             <!-- //item -->
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">12:15 &ndash; 13:15</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Lunch</h3>
+              </div>
+              <!--//content-->
+            </div>
             <div class="item item-talk mt-1">
               <div class="meta">
                 <h4 class="time mb-3">12:30 &ndash; 13:30</h4>
@@ -1250,7 +1435,7 @@
             <!--//item-->
             <div class="item item-other">
               <div class="meta">
-                <h4 class="time mb-3">13:30 &ndash; 15:00</h4>
+                <h4 class="time mb-3">13:15 &ndash; 14:45</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -1262,7 +1447,7 @@
                   >
                   <ul>
                     <li>
-                      UNESCO-IOC Tsunami Ready Recognition Programme
+                      UNESCO-IOC Tsunami Ready Recognition Programme in PTWS
                       <div class="d-flex flex-row align-items-center">
                         <div class="">
                           <img
@@ -1349,23 +1534,6 @@
                         </div>
                       </div>
                     </li>
-                    <li>
-                      WTAD 2024 Tsunami United Initiatives
-                      <div class="d-flex flex-row align-items-center">
-                        <div class="">
-                          <img
-                            class="presenter"
-                            src="dist/images/users.png"
-                            alt=""
-                            width="20"
-                            height="20"
-                          />
-                        </div>
-                        <div style="margin-left: 4px; font-weight: 600">
-                          Mr. Ardito M Kodijat
-                        </div>
-                      </div>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -1374,7 +1542,17 @@
             <!--//item-->
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">15:40 &ndash; 17:00</h4>
+                <h4 class="time mb-3">14:45 &ndash; 15:00</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Coffee Break</h3>
+              </div>
+              <!--//content-->
+            </div>
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">15:00 &ndash; 17:00</h4>
               </div>
               <!--//meta-->
               <div class="content">
@@ -1400,7 +1578,7 @@
                         </div>
                         <div style="margin-left: 4px; font-weight: 600">
                           Prof. Gen. Syamsul Maarief, Prof. Denise Conan, Irina
-                          Rafliana, Dr. Fatemeh Jalayer, Dr. Oktarina
+                          Rafliana, Dr. Fatemeh Jalayer, Dr. Rina Suryani Oktari
                         </div>
                       </div>
                     </li>
@@ -1418,8 +1596,7 @@
                           />
                         </div>
                         <div style="margin-left: 4px; font-weight: 600">
-                          Dr. Harkunti P. Rahayu, Mr. Ruly, Prof. Ian Robertson,
-                          and Prof. Masyhur Irsyam
+                          Dr. Harkunti P. Rahayu, Mr. Ruly, Prof. Iswandi Imran
                         </div>
                       </div>
                     </li>
@@ -1495,7 +1672,7 @@
           >
             <div class="item item-talk">
               <div class="meta">
-                <h4 class="time mb-3">9:00 &ndash; 10:30</h4>
+                <h4 class="time mb-3">9:00 &ndash; 10:50</h4>
                 <!--//profile-->
               </div>
               <!--//meta-->
@@ -1508,7 +1685,7 @@
                   >
                   <ul>
                     <li>
-                      MHEWS & EW4AL
+                     Panel on MHEWS & EW4AL
                       <div class="d-flex flex-row align-items-center">
                         <div class="">
                           <img
@@ -1520,24 +1697,7 @@
                           />
                         </div>
                         <div style="margin-left: 4px; font-weight: 600">
-                          Mr. Ben Churchill (WMO)
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      UN Ocean Decade
-                      <div class="d-flex flex-row align-items-center">
-                        <div class="">
-                          <img
-                            class="presenter"
-                            src="dist/images/users.png"
-                            alt=""
-                            width="20"
-                            height="20"
-                          />
-                        </div>
-                        <div style="margin-left: 4px; font-weight: 600">
-                          Dr. Srinivasa K. Tummala
+                          Mr. Ben Churchill (WMO), Mr. Vijay Ummidi, Mr. Amin Riaz, Mr. Marco Toscano Rivalta
                         </div>
                       </div>
                     </li>
@@ -1559,6 +1719,40 @@
                       </div>
                     </li>
                     <li>
+                      UN Ocean Decade
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="">
+                          <img
+                            class="presenter"
+                            src="dist/images/users.png"
+                            alt=""
+                            width="20"
+                            height="20"
+                          />
+                        </div>
+                        <div style="margin-left: 4px; font-weight: 600">
+                          Dr. Srinivasa K. Tummala
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      Synergies between the UNESCO IOC Tsunami Ready and WMO Weather Ready Nations Programs
+                      <div class="d-flex flex-row align-items-center">
+                        <div class="">
+                          <img
+                            class="presenter"
+                            src="dist/images/users.png"
+                            alt=""
+                            width="20"
+                            height="20"
+                          />
+                        </div>
+                        <div style="margin-left: 4px; font-weight: 600">
+                          Dr.Laura Kong
+                        </div>
+                      </div>
+                    </li>
+                    <li>
                       MCR2030 (Mainstreaming DRR into Urban Planning)
                       <div class="d-flex flex-row align-items-center">
                         <div class="">
@@ -1571,12 +1765,22 @@
                           />
                         </div>
                         <div style="margin-left: 4px; font-weight: 600">
-                          Dr. Denis Chang Seng and Prof Dilanthi Amaratunga
+                          Prof Dilanthi Amaratunga
                         </div>
                       </div>
                     </li>
                   </ul>
                 </div>
+              </div>
+              <!--//content-->
+            </div>
+            <div class="item item-talk">
+              <div class="meta">
+                <h4 class="time mb-3">11:50 &ndash; 11:00</h4>
+              </div>
+              <!--//meta-->
+              <div class="content">
+                <h3 class="title mb-3">Coffee Break</h3>
               </div>
               <!--//content-->
             </div>
@@ -1604,14 +1808,12 @@
                           />
                         </div>
                         <div style="margin-left: 4px; font-weight: 600">
-                          Chairs and TIC representatives from each ICG, IUGG
-                          expert, UNDRR representative, ODTP Science Committee
-                          representative
+                          TOWS-WG Chair (Dr. Srinivasa K. Tummala) and ICG Chairs
                         </div>
                       </div>
                     </li>
                     <li>
-                      Presentation contributions to an outcome document, drawing
+                      Contributions to an outcome document, drawing
                       upon achievements, gaps, challenges, and priorities from
                       each session, including pre-event activities
                       <div class="d-flex flex-row align-items-center">
@@ -1652,7 +1854,7 @@
             <!--//item-->
             <div class="item item-other">
               <div class="meta">
-                <h4 class="time mb-3">13:30 &ndash; 15:00</h4>
+                <h4 class="time mb-3">13:30 &ndash; 14:50</h4>
               </div>
               <!--//meta-->
               <div class="content">
